@@ -10,7 +10,7 @@ const images = [
 
 export default function HomeCallCenter() {
   return (
-    <section className="mb-18.75">
+    <section className="pt-10 pb-17.5 max-md:py-16">
       <div className="container">
         <div className="grid lg:grid-cols-[1.1fr_1.3248fr] items-start gap-y-2 gap-x-28 mb-10">
           <Title variant="gray">

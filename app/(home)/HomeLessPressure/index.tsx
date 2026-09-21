@@ -11,7 +11,7 @@ const items = [
   {
     title: 'Your way of working',
     description:
-      'Set the workflows, requirements, and communication standards the team follows.\n',
+      'Set the workflows, requirements, and communication standards the team follows.',
   },
   {
     title: 'Fewer loose ends',
@@ -44,9 +44,9 @@ export default function HomeLessPressure() {
               {items.map((item) => (
                 <div
                   key={item.title}
-                  className="relative before:content-[''] before:absolute before:left-0 before:top-0 before:h-full before:w-1.25 before:bg-blue pl-7"
+                  className="relative before:content-[''] before:absolute before:left-0 before:top-0 before:h-full before:w-1.25 before:bg-blue pl-7 space-y-2"
                 >
-                  <Title as="h3" className="text-[28px] leading-[1.2] mb-2">
+                  <Title as="h3" className="text-[28px] leading-[1.2]">
                     {item.title}
                   </Title>
                   <Description className="max-w-89" size="xs">

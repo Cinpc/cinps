@@ -1,17 +1,17 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { Button } from "@/components/ui/button";
+import Image from 'next/image';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { Button } from '@/components/ui/button';
 import {
   NavigationMenu,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
   navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu";
-import { menu } from "@/data/menu";
+} from '@/components/ui/navigation-menu';
+import { menu } from '@/data/menu';
 
 export default function Header() {
   const pathname = usePathname();
@@ -40,11 +40,21 @@ export default function Header() {
         </NavigationMenu>
 
         <div className="flex shrink-0 items-center gap-6.5">
-          <Button nativeButton={false} className={'h-11.5 px-6 text-base'} variant={'secondary'} render={<Link href="/contact" />}>
+          <Button
+            nativeButton={false}
+            className="h-11.5 px-6 text-base md:min-w-0"
+            variant="secondary"
+            render={<Link href="/contact" />}
+          >
             Get a quote
           </Button>
 
-          <Button type="button" className={'px-0 gap-2'} variant="ghost" aria-label="Language">
+          <Button
+            type="button"
+            className={'px-0 gap-2 md:min-w-0'}
+            variant="ghost"
+            aria-label="Language"
+          >
             <Image
               src="/icons/en-lang.svg"
               alt="English"

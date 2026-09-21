@@ -1,64 +1,49 @@
+import type { ReactNode } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { cn } from 'cn';
 import Title from '@/components/Title';
 import Description from '@/components/Description';
-import Image from 'next/image';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import Link from 'next/link';
 
-const items = [
-  {
-    icon: '/icons/lifebuoy.svg',
-    title: 'Compliance Support',
-    description:
-      'Support customer-facing processes around your established requirements and procedures.',
-  },
-  {
-    icon: '/icons/headset.svg',
-    title: 'Collections Support',
-    description:
-      'Keep payment reminders and collection-related follow-ups moving.',
-  },
-  {
-    icon: '/icons/credit-card-reader.svg',
-    title: 'Customer Care',
-    description:
-      'Handle everyday questions, requests, and account-related concerns.',
-  },
-  {
-    icon: '/icons/triangle-alert.svg',
-    title: 'Fraud Support',
-    description:
-      'Support communication around suspicious activity, verification, and further review.',
-  },
-  {
-    icon: '/icons/sticky-note-check.svg',
-    title: 'Application Support',
-    description:
-      'Guide customers through applications, information requests, and next steps.',
-  },
-  {
-    icon: '/icons/file-user.svg',
-    title: 'Complaint Handling',
-    description:
-      'Keep complaints moving through response, follow-up, and escalation.',
-  },
-];
+export type HomeOneTeamItem = {
+  icon: string;
+  title: string;
+  description: string;
+};
 
-export default function HomeOneTeam() {
+export type HomeOneTeamProps = {
+  title: ReactNode;
+  description?: ReactNode;
+  items: HomeOneTeamItem[];
+  buttonText?: string;
+  buttonHref?: string;
+  sectionClassName?: string;
+};
+
+export default function HomeOneTeam({
+  title,
+  description,
+  items,
+  buttonText,
+  buttonHref,
+  sectionClassName,
+}: HomeOneTeamProps) {
   return (
-    <section className="py-16 bg-light-gray">
+    <section className={cn('py-16 bg-light-gray', sectionClassName)}>
       <div className="container">
-        <div className="mb-10">
-          <Title variant="gray" className="mb-2">
-            One Team for the Conversations You Need Covered
-          </Title>
-          <Description>
-            Move recurring customer communication and support tasks outside your
-            internal team.
-          </Description>
+        <div className="mb-10 space-y-2">
+          <Title variant="gray">{title}</Title>
+          {description ? <Description>{description}</Description> : null}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2.5 mb-10">
+        <div
+          className={cn(
+            'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2.5',
+            buttonText && buttonHref && 'mb-10'
+          )}
+        >
           {items.map((item) => (
             <Card
               key={item.title}
@@ -83,11 +68,13 @@ export default function HomeOneTeam() {
           ))}
         </div>
 
-        <div className="text-center">
-          <Button className="mx-auto" render={<Link href={'/services'} />}>
-            Explore Services
-          </Button>
-        </div>
+        {buttonText && buttonHref ? (
+          <div className="text-center">
+            <Button className="mx-auto" render={<Link href={buttonHref} />}>
+              {buttonText}
+            </Button>
+          </div>
+        ) : null}
       </div>
     </section>
   );
