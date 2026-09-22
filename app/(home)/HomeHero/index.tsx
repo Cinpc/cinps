@@ -12,8 +12,8 @@ export type HomeHeroProps = {
   description: ReactNode;
   imageSrc: string;
   imageSrcMobile: string;
-  buttonText: string;
-  buttonHref: string;
+  buttonText?: string;
+  buttonHref?: string;
   contentClassName?: string;
   cardClassName?: string;
   sectionClassName?: string;
@@ -53,7 +53,7 @@ export default function HomeHero({
           />
           <Card
             className={cn(
-              'max-w-162.5 absolute bottom-4 left-4 right-4',
+              'max-w-162.5 absolute bottom-4 left-4 right-4 max-md:p-4',
               cardClassName
             )}
           >
@@ -63,12 +63,19 @@ export default function HomeHero({
 
             <Description
               size="17"
-              className="max-md:text-base lg:leading-[1.529] mb-14 max-lg:mb-8"
+              className="max-md:text-base max-md:leading-[24px]"
             >
               {description}
             </Description>
 
-            <Button render={<Link href={buttonHref} />}>{buttonText}</Button>
+            {buttonText && buttonHref ? (
+              <Button
+                render={<Link href={buttonHref} />}
+                className="mt-14 max-lg:mt-8"
+              >
+                {buttonText}
+              </Button>
+            ) : null}
           </Card>
         </div>
       </div>
