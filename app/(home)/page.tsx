@@ -5,6 +5,7 @@ import HomeLessPressure from '@/app/(home)/HomeLessPressure';
 import HomeVoiceCustomers from '@/app/(home)/HomeVoiceCustomers';
 import HomeHaveCalls from '@/app/(home)/HomeHaveCalls';
 import HomeClearProcess from '@/app/(home)/HomeClearProcess';
+import HomeBuiltFor from '@/app/(home)/HomeBuiltFor';
 
 export default function Home() {
   return (
@@ -66,6 +67,7 @@ export default function Home() {
         ]}
       />
       <HomeLessPressure />
+      <HomeBuiltFor />
       <HomeClearProcess />
       <HomeVoiceCustomers />
       <HomeHaveCalls />
