@@ -6,7 +6,7 @@ const titleVariants = cva('font-semibold', {
   variants: {
     as: {
       h1: 'text-[32px] lg:text-[44px] leading-[1.406] lg:leading-[1.022] font-bold mb-4',
-      h2: 'text-[28px] lg:text-[32px] leading-[1.25] lg:leading-[1.2] uppercase',
+      h2: 'text-[28px] lg:text-[32px] leading-[40px] lg:leading-[45px] uppercase',
       h3: 'text-2xl leading-[1.2]',
     },
     variant: {

@@ -5,12 +5,12 @@ import { cn } from 'cn';
 const descriptionVariants = cva('leading-[1.5]', {
   variants: {
     size: {
-      default: 'text-sm',
+      default: 'text-sm leading-[21px]',
       xs: 'text-xs',
       sm: 'text-sm',
       '13': 'text-[13px]',
       '15': 'text-[15px]',
-      '17': 'text-[17px]',
+      '17': 'text-[17px] leading-[26px]',
     },
     variant: {
       default: 'text-black-50',
