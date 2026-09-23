@@ -1,0 +1,135 @@
+{
+  "Menu": {
+    "home": "Home",
+    "services": "Services",
+    "solutions": "Solutions",
+    "process": "Process",
+    "company": "Company",
+    "contact": "Contact"
+  },
+  "Header": {
+    "quote": "Get a quote"
+  },
+  "Footer": {
+    "description": "Customer support & BPO solutions for financial businesses.",
+    "copyright": "© {year} CALL CENTER INP. All rights reserved.",
+    "explore": "Explore",
+    "company": "Company",
+    "contact": "Contact",
+    "followUs": "Follow Us"
+  },
+  "Legal": {
+    "terms-conditions": "Terms & Conditions",
+    "privacy-policy": "Privacy Policy",
+    "cookie-policy": "Cookie Policy",
+    "refund-policy": "Refund Policy"
+  },
+  "HomeHero": {
+    "title": "Give Every Call Somewhere to Go",
+    "description": "When customer calls start competing with the work your team was actually hired to do, Cinpc takes them off the queue.",
+    "button": "Discuss Your Needs"
+  },
+  "HomeCallCenter": {
+    "title": "Call Center Operations Without the In-House Overhead",
+    "description": "We handle customer support, outbound communication, sales assistance, and recurring customer contact as an extension of your operations."
+  },
+  "HomeOneTeam": {
+    "title": "One Team for the Conversations You Need Covered",
+    "description": "Move recurring customer communication and support tasks outside your internal team.",
+    "button": "Explore Services",
+    "compliance": {
+      "title": "Compliance Support",
+      "description": "Support customer-facing processes around your established requirements and procedures."
+    },
+    "collections": {
+      "title": "Collections Support",
+      "description": "Keep payment reminders and collection-related follow-ups moving."
+    },
+    "customerCare": {
+      "title": "Customer Care",
+      "description": "Handle everyday questions, requests, and account-related concerns."
+    },
+    "fraud": {
+      "title": "Fraud Support",
+      "description": "Support communication around suspicious activity, verification, and further review."
+    },
+    "application": {
+      "title": "Application Support",
+      "description": "Guide customers through applications, information requests, and next steps."
+    },
+    "complaint": {
+      "title": "Complaint Handling",
+      "description": "Keep complaints moving through response, follow-up, and escalation."
+    }
+  },
+  "HomeLessPressure": {
+    "title": "Less Pressure Behind the Scenes",
+    "description": "Outsourcing works best when your own team notices the difference too. Cinpc adds people and capacity where customer communication is creating bottlenecks.",
+    "scale": {
+      "title": "Room to scale",
+      "description": "Add capacity when the queue grows without rebuilding your internal team."
+    },
+    "working": {
+      "title": "Your way of working",
+      "description": "Set the workflows, requirements, and communication standards the team follows."
+    },
+    "looseEnds": {
+      "title": "Fewer loose ends",
+      "description": "Keep calls, follow-ups, and customer requests from falling between responsibilities."
+    },
+    "timeInHouse": {
+      "title": "More time in-house",
+      "description": "Leave recurring communication outside so your team can stay on its core work."
+    }
+  },
+  "HomeBuiltFor": {
+    "title": "Built for Financial Customer Operations",
+    "description": "We handle customer support, outbound communication, sales assistance, and recurring customer contact as an extension of your operations.",
+    "fintech": {
+      "title": "FinTech",
+      "description": "Cover customer communication around digital financial products and services."
+    },
+    "lending": {
+      "title": "Lending",
+      "description": "Keep borrower inquiries, follow-ups, and routine contact moving."
+    },
+    "insurance": {
+      "title": "Insurance",
+      "description": "Support customers through questions, requests, and ongoing communication."
+    },
+    "financialServices": {
+      "title": "Financial Services",
+      "description": "Add external call center capacity to established customer operations."
+    }
+  },
+  "HomeClearProcess": {
+    "title": "A Clear Process from Day One",
+    "button": "See Our Process",
+    "map": {
+      "title": "Map",
+      "description": "We identify which conversations and tasks need to leave your internal queue."
+    },
+    "setUp": {
+      "title": "Set Up",
+      "description": "Workflows, requirements, and team responsibilities are prepared before launch."
+    },
+    "goLive": {
+      "title": "Go Live",
+      "description": "The Cinpc team starts handling the agreed customer operations."
+    },
+    "adjust": {
+      "title": "Adjust",
+      "description": "Capacity and workflows change when volumes, priorities, or requirements do."
+    }
+  },
+  "HomeVoiceCustomers": {
+    "title": "A Voice Customers Can Actually Reach",
+    "description": "A dashboard can organize a queue, but it cannot have a conversation. Cinpc puts people behind the customer touchpoints where listening, explaining, following up, and resolving the issue still matter.",
+    "button": "About Cinpc"
+  },
+  "HomeHaveCalls": {
+    "title": "Have Calls Your Team Shouldn't Be Handling?",
+    "description": "Show us what currently lands on your team's desk. We can identify which customer operations make sense to move to Cinpc.",
+    "button": "Get a Quote"
+  }
+}

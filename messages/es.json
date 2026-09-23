@@ -1,0 +1,135 @@
+{
+  "Menu": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "solutions": "Soluciones",
+    "process": "Proceso",
+    "company": "Empresa",
+    "contact": "Contacto"
+  },
+  "Header": {
+    "quote": "Solicitar presupuesto"
+  },
+  "Footer": {
+    "description": "Atención al cliente y soluciones BPO para empresas financieras.",
+    "copyright": "© {year} CALL CENTER INP. Todos los derechos reservados.",
+    "explore": "Explorar",
+    "company": "Empresa",
+    "contact": "Contacto",
+    "followUs": "Síguenos"
+  },
+  "Legal": {
+    "terms-conditions": "Términos y Condiciones",
+    "privacy-policy": "Política de Privacidad",
+    "cookie-policy": "Política de Cookies",
+    "refund-policy": "Política de Reembolso"
+  },
+  "HomeHero": {
+    "title": "Dale un destino a cada llamada",
+    "description": "Cuando las llamadas de los clientes empiezan a competir con el trabajo para el que realmente contrataste a tu equipo, Cinpc las saca de la cola.",
+    "button": "Hablemos de tus necesidades"
+  },
+  "HomeCallCenter": {
+    "title": "Operaciones de call center sin los costes de un equipo interno",
+    "description": "Gestionamos la atención al cliente, la comunicación saliente, el soporte de ventas y el contacto recurrente con los clientes como una extensión de tus operaciones."
+  },
+  "HomeOneTeam": {
+    "title": "Un solo equipo para las conversaciones que necesitas cubrir",
+    "description": "Deja la comunicación recurrente con los clientes y las tareas de soporte fuera de tu equipo interno.",
+    "button": "Explorar servicios",
+    "compliance": {
+      "title": "Soporte de cumplimiento normativo",
+      "description": "Apoyamos los procesos de atención al cliente conforme a los requisitos y procedimientos establecidos por tu empresa."
+    },
+    "collections": {
+      "title": "Soporte de cobros",
+      "description": "Mantenemos en marcha los recordatorios de pago y el seguimiento relacionado con los cobros."
+    },
+    "customerCare": {
+      "title": "Atención al cliente",
+      "description": "Gestionamos consultas habituales, solicitudes y cuestiones relacionadas con las cuentas."
+    },
+    "fraud": {
+      "title": "Soporte ante fraudes",
+      "description": "Gestionamos la comunicación con los clientes en casos de actividad sospechosa, verificación y revisiones adicionales."
+    },
+    "application": {
+      "title": "Soporte de solicitudes",
+      "description": "Guiamos a los clientes durante sus solicitudes, peticiones de información y próximos pasos."
+    },
+    "complaint": {
+      "title": "Gestión de reclamaciones",
+      "description": "Gestionamos las reclamaciones durante las etapas de respuesta, seguimiento y escalamiento."
+    }
+  },
+  "HomeLessPressure": {
+    "title": "Menos presión entre bastidores",
+    "description": "La externalización funciona mejor cuando tu propio equipo también nota la diferencia. Cinpc aporta personal y capacidad allí donde la comunicación con los clientes está creando cuellos de botella.",
+    "scale": {
+      "title": "Capacidad para crecer",
+      "description": "Añade capacidad cuando aumente la cola de llamadas sin tener que ampliar tu equipo interno."
+    },
+    "working": {
+      "title": "Tu forma de trabajar",
+      "description": "Define los flujos de trabajo, los requisitos y los estándares de comunicación que seguirá el equipo."
+    },
+    "looseEnds": {
+      "title": "Menos cabos sueltos",
+      "description": "Evita que las llamadas, los seguimientos y las solicitudes de los clientes queden sin atender por falta de una responsabilidad clara."
+    },
+    "timeInHouse": {
+      "title": "Más tiempo para tu equipo",
+      "description": "Externaliza la comunicación recurrente para que tu equipo pueda centrarse en sus funciones principales."
+    }
+  },
+  "HomeBuiltFor": {
+    "title": "Diseñado para operaciones de atención al cliente en el sector financiero",
+    "description": "Las consultas relacionadas con el dinero rara vez son conversaciones que los clientes quieren dejar sin respuesta. Cinpc ofrece capacidad de comunicación externalizada para empresas del sector financiero.",
+    "fintech": {
+      "title": "FinTech",
+      "description": "Gestiona la comunicación con los clientes sobre productos y servicios financieros digitales."
+    },
+    "lending": {
+      "title": "Préstamos",
+      "description": "Mantén en marcha las consultas de los prestatarios, los seguimientos y el contacto habitual."
+    },
+    "insurance": {
+      "title": "Seguros",
+      "description": "Atiende a los clientes con sus consultas, solicitudes y comunicaciones continuas."
+    },
+    "financialServices": {
+      "title": "Servicios financieros",
+      "description": "Añade capacidad externa de call center a tus operaciones de atención al cliente existentes."
+    }
+  },
+  "HomeClearProcess": {
+    "title": "Un proceso claro desde el primer día",
+    "button": "Ver nuestro proceso",
+    "map": {
+      "title": "Definir",
+      "description": "Identificamos qué conversaciones y tareas deben salir de la cola de tu equipo interno."
+    },
+    "setUp": {
+      "title": "Preparar",
+      "description": "Preparamos los flujos de trabajo, los requisitos y las responsabilidades del equipo antes del lanzamiento."
+    },
+    "goLive": {
+      "title": "Poner en marcha",
+      "description": "El equipo de Cinpc comienza a gestionar las operaciones de atención al cliente acordadas."
+    },
+    "adjust": {
+      "title": "Ajustar",
+      "description": "Adaptamos la capacidad y los flujos de trabajo cuando cambian los volúmenes, las prioridades o los requisitos."
+    }
+  },
+  "HomeVoiceCustomers": {
+    "title": "Una voz a la que los clientes realmente pueden acceder",
+    "description": "Un panel puede organizar una cola, pero no puede mantener una conversación. Cinpc pone personas detrás de los puntos de contacto con el cliente donde escuchar, explicar, hacer seguimiento y resolver problemas sigue siendo fundamental.",
+    "button": "Sobre Cinpc"
+  },
+  "HomeHaveCalls": {
+    "title": "¿Tu equipo atiende llamadas que no debería gestionar?",
+    "description": "Muéstranos qué tareas llegan actualmente a tu equipo. Podemos identificar qué operaciones de atención al cliente tiene sentido trasladar a Cinpc.",
+    "button": "Solicitar presupuesto"
+  }
+}
