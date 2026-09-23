@@ -19,11 +19,11 @@ export function getMenuItems(ids: string[]) {
 
 export const footerMenu = [
   {
-    title: 'Explore',
+    id: 'explore',
     items: getMenuItems(['services', 'solutions', 'contact']),
   },
   {
-    title: 'Company',
+    id: 'company',
     items: getMenuItems(['process', 'company']),
   },
 ];
