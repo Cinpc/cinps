@@ -7,7 +7,7 @@ const descriptionVariants = cva('leading-[1.5]', {
     size: {
       default: 'text-sm leading-[21px]',
       xs: 'text-xs',
-      sm: 'text-sm',
+      base: 'text-base leading-[125%]',
       '13': 'text-[13px]',
       '15': 'text-[15px]',
       '17': 'text-[17px] leading-[26px]',

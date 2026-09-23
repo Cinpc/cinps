@@ -1,5 +1,7 @@
 import HomeHero from '@/app/(home)/HomeHero';
-import CompanyStartConversation from "@/app/contact/components/CompanyStartConversation";
+import ContactStartConversation from '@/app/contact/components/ContactStartConversation';
+import ContactWhatHappens from '@/app/contact/components/ContactWhatHappens';
+import ContactNotSure from '@/app/contact/components/ContactNotSure';
 
 export default function ContactPage() {
   return (
@@ -12,7 +14,9 @@ export default function ContactPage() {
         contentClassName="max-md:min-h-172.5"
         cardClassName="max-w-163.25"
       />
-      <CompanyStartConversation />
+      <ContactStartConversation />
+      <ContactWhatHappens />
+      <ContactNotSure />
     </>
   );
 }

@@ -99,7 +99,7 @@ function FormSelect({
   );
 }
 
-export default function CompanyStartConversation() {
+export default function ContactStartConversation() {
   const {
     register,
     control,
