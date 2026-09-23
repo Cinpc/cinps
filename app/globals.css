@@ -56,4 +56,9 @@
   span {
     display: block;
   }
+
+  svg {
+    max-width: 100%;
+    height: auto;
+  }
 }

@@ -1,9 +1,16 @@
+import type { Metadata } from 'next';
 import HomeHero from '@/app/(home)/HomeHero';
 import CompanyAbout from '@/app/company/component/CompanyAbout';
 import CompanyCloseEnough from '@/app/company/component/CompanyCloseEnough';
 import CompanyFocused from '@/app/company/component/CompanyFocused';
 import CompanyPeopleBehind from '@/app/company/component/CompanyPeopleBehind';
 import CompanyLetsTalk from '@/app/company/component/CompanyLetsTalk';
+
+export const metadata: Metadata = {
+  title: 'Financial Call Center Outsourcing Company | Cinpc',
+  description:
+    'Learn about Cinpc, a call center outsourcing company providing customer and operational support for businesses across the financial sector.',
+};
 
 export default function CompanyPage() {
   return (

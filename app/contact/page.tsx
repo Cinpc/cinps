@@ -1,7 +1,14 @@
+import type { Metadata } from 'next';
 import HomeHero from '@/app/(home)/HomeHero';
 import ContactStartConversation from '@/app/contact/components/ContactStartConversation';
 import ContactWhatHappens from '@/app/contact/components/ContactWhatHappens';
 import ContactNotSure from '@/app/contact/components/ContactNotSure';
+
+export const metadata: Metadata = {
+  title: 'Contact Cinpc | Call Center Outsourcing Services',
+  description:
+    'Contact Cinpc to discuss your call center outsourcing needs, customer operations, workflows, expected volumes, and required support.',
+};
 
 export default function ContactPage() {
   return (

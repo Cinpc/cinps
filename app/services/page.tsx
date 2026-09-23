@@ -1,9 +1,16 @@
+import type { Metadata } from 'next';
 import HomeHero from '@/app/(home)/HomeHero';
 import HomeOneTeam from '@/app/(home)/HomeOneTeam';
 import ServicesDecide from '@/app/services/components/ServicesDecide';
 import ServicesBuiltAround from '@/app/services/components/ServicesBuiltAround';
 import HomeHaveMore from '@/app/services/components/ServicesHaveMore';
 import ServicesCustomerJourney from '@/app/services/components/ServicesCustomerJourney';
+
+export const metadata: Metadata = {
+  title: 'Financial Call Center Outsourcing Services | Cinpc',
+  description:
+    'Explore Cinpc financial BPO services, including customer care, collections, compliance, application, fraud, and complaint support.',
+};
 
 export default function ServicesPage() {
   return (

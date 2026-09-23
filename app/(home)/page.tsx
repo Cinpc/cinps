@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import HomeHero from '@/app/(home)/HomeHero';
 import HomeCallCenter from '@/app/(home)/HomeCallCenter';
 import HomeOneTeam from '@/app/(home)/HomeOneTeam';
@@ -6,6 +7,12 @@ import HomeVoiceCustomers from '@/app/(home)/HomeVoiceCustomers';
 import HomeHaveCalls from '@/app/(home)/HomeHaveCalls';
 import HomeClearProcess from '@/app/(home)/HomeClearProcess';
 import HomeBuiltFor from '@/app/(home)/HomeBuiltFor';
+
+export const metadata: Metadata = {
+  title: 'Call Center Outsourcing Services | Cinpc',
+  description:
+    'Outsource customer support and financial BPO operations with Cinpc. Get flexible call center support built around your business workflows.',
+};
 
 export default function Home() {
   return (
