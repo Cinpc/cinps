@@ -9,7 +9,7 @@ import Title from '@/components/Title';
 
 export type HomeHeroProps = {
   title: ReactNode;
-  description: ReactNode;
+  description?: ReactNode;
   imageSrc: string;
   imageSrcMobile: string;
   buttonText?: string;
@@ -61,12 +61,14 @@ export default function HomeHero({
               {title}
             </Title>
 
-            <Description
-              size="17"
-              className="max-md:text-base max-md:leading-[24px]"
-            >
-              {description}
-            </Description>
+            {description ? (
+              <Description
+                size="17"
+                className="max-md:text-base max-md:leading-[24px] mt-4"
+              >
+                {description}
+              </Description>
+            ) : null}
 
             {buttonText && buttonHref ? (
               <Button

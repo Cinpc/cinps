@@ -5,7 +5,7 @@ import { cn } from 'cn';
 const titleVariants = cva('font-semibold', {
   variants: {
     as: {
-      h1: 'text-[32px] lg:text-[44px] leading-[40px] lg:leading-[45px] font-bold mb-4',
+      h1: 'text-[32px] lg:text-[44px] leading-[40px] lg:leading-[45px] font-bold',
       h2: 'text-[28px] lg:text-[32px] leading-[40px] lg:leading-[45px] uppercase',
       h3: 'text-2xl leading-[1.2]',
     },

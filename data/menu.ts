@@ -29,7 +29,12 @@ export const footerMenu = [
 ];
 
 export const legalMenu: MenuItem[] = [
-  { id: 'terms', href: '/terms', label: 'Terms & Conditions' },
-  { id: 'privacy', href: '/privacy', label: 'Privacy Policy' },
-  { id: 'cookies', href: '/cookies', label: 'Cookie Policy' },
+  {
+    id: 'terms-conditions',
+    href: '/terms-conditions',
+    label: 'Terms & Conditions',
+  },
+  { id: 'privacy-policy', href: '/privacy-policy', label: 'Privacy Policy' },
+  { id: 'cookie-policy', href: '/cookie-policy', label: 'Cookie Policy' },
+  { id: 'refund-policy', href: '/refund-policy', label: 'Refund Policy' },
 ];
