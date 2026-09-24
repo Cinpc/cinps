@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Link, usePathname } from '@/i18n/navigation';
-import { Button } from '@/components/ui/button';
+// import { Button } from '@/components/ui/button';
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -11,7 +11,7 @@ import {
   NavigationMenuList,
 } from '@/components/ui/navigation-menu';
 import { footerMenu, legalMenu } from '@/data/menu';
-import { contact, socials } from '@/data/contact';
+// import { contact, socials } from '@/data/contact';
 import Description from '@/components/Description';
 import LocaleSwitcher from '@/components/LocaleSwitcher';
 
@@ -66,61 +66,61 @@ export default function Footer() {
                 </NavigationMenu>
               </div>
             ))}
-            <div>
-              <Description
-                className="mb-2.5 tracking-[-0.076px] max-lg:text-base max-lg:mb-5.5"
-                size="13"
-                variant="dark"
-              >
-                {tFooter('contact')}
-              </Description>
-              <ul className="space-y-2.5 max-lg:space-y-4.5">
-                <li>
-                  <a
-                    href={`mailto:${contact.email}`}
-                    className="text-mid-gray text-sm hover:text-blue"
-                  >
-                    {contact.email}
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={`tel:${contact.phone}`}
-                    className="text-mid-gray text-sm hover:text-blue"
-                  >
-                    {contact.phone}
-                  </a>
-                </li>
-                <li>
-                  <span className="text-mid-gray text-sm">
-                    {contact.address}
-                  </span>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <Description
-                className="mb-2.5 tracking-[-0.076px] max-lg:text-base max-lg:mb-5.5"
-                size="13"
-                variant="dark"
-              >
-                {tFooter('followUs')}
-              </Description>
-              <ul className="space-y-2.5 max-lg:space-y-4.5">
-                {socials.map((item) => (
-                  <li key={item.id}>
-                    <a
-                      href={item.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-mid-gray text-sm hover:text-blue"
-                    >
-                      {item.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            {/*<div>*/}
+            {/*  <Description*/}
+            {/*    className="mb-2.5 tracking-[-0.076px] max-lg:text-base max-lg:mb-5.5"*/}
+            {/*    size="13"*/}
+            {/*    variant="dark"*/}
+            {/*  >*/}
+            {/*    {tFooter('contact')}*/}
+            {/*  </Description>*/}
+            {/*  <ul className="space-y-2.5 max-lg:space-y-4.5">*/}
+            {/*    <li>*/}
+            {/*      <a*/}
+            {/*        href={`mailto:${contact.email}`}*/}
+            {/*        className="text-mid-gray text-sm hover:text-blue"*/}
+            {/*      >*/}
+            {/*        {contact.email}*/}
+            {/*      </a>*/}
+            {/*    </li>*/}
+            {/*    <li>*/}
+            {/*      <a*/}
+            {/*        href={`tel:${contact.phone}`}*/}
+            {/*        className="text-mid-gray text-sm hover:text-blue"*/}
+            {/*      >*/}
+            {/*        {contact.phone}*/}
+            {/*      </a>*/}
+            {/*    </li>*/}
+            {/*    <li>*/}
+            {/*      <span className="text-mid-gray text-sm">*/}
+            {/*        {contact.address}*/}
+            {/*      </span>*/}
+            {/*    </li>*/}
+            {/*  </ul>*/}
+            {/*</div>*/}
+            {/*<div>*/}
+            {/*  <Description*/}
+            {/*    className="mb-2.5 tracking-[-0.076px] max-lg:text-base max-lg:mb-5.5"*/}
+            {/*    size="13"*/}
+            {/*    variant="dark"*/}
+            {/*  >*/}
+            {/*    {tFooter('followUs')}*/}
+            {/*  </Description>*/}
+            {/*  <ul className="space-y-2.5 max-lg:space-y-4.5">*/}
+            {/*    {socials.map((item) => (*/}
+            {/*      <li key={item.id}>*/}
+            {/*        <a*/}
+            {/*          href={item.href}*/}
+            {/*          target="_blank"*/}
+            {/*          rel="noopener noreferrer"*/}
+            {/*          className="text-mid-gray text-sm hover:text-blue"*/}
+            {/*        >*/}
+            {/*          {item.label}*/}
+            {/*        </a>*/}
+            {/*      </li>*/}
+            {/*    ))}*/}
+            {/*  </ul>*/}
+            {/*</div>*/}
           </div>
         </div>
         <div className="pt-6 flex flex-wrap items-center justify-between gap-y-8 gap-x-4 max-md:justify-center">

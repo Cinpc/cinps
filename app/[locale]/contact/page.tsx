@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { getPageMetadata } from '@/i18n/metadata';
 import HomeHero from '@/app/[locale]/(home)/HomeHero';
@@ -5,7 +6,7 @@ import ContactStartConversation from '@/app/[locale]/contact/components/ContactS
 import ContactWhatHappens from '@/app/[locale]/contact/components/ContactWhatHappens';
 import ContactNotSure from '@/app/[locale]/contact/components/ContactNotSure';
 
-export function generateMetadata() {
+export function generateMetadata(): Promise<Metadata> {
   return getPageMetadata('contact');
 }
 

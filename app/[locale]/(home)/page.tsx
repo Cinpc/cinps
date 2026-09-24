@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { getPageMetadata } from '@/i18n/metadata';
 import HomeHero from '@/app/[locale]/(home)/HomeHero';
@@ -10,7 +11,7 @@ import HomeClearProcess from '@/app/[locale]/(home)/HomeClearProcess';
 import HomeBuiltFor from '@/app/[locale]/(home)/HomeBuiltFor';
 import { contactFormHref } from '@/data/contact';
 
-export function generateMetadata() {
+export function generateMetadata(): Promise<Metadata> {
   return getPageMetadata('home');
 }
 

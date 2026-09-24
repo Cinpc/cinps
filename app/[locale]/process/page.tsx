@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { getPageMetadata } from '@/i18n/metadata';
 import HomeHero from '@/app/[locale]/(home)/HomeHero';
@@ -8,7 +9,7 @@ import ProcessBuilt from '@/app/[locale]/process/components/ProcessBuilt';
 import ProcessReady from '@/app/[locale]/process/components/ProcessReady';
 import { contactFormHref } from '@/data/contact';
 
-export function generateMetadata() {
+export function generateMetadata(): Promise<Metadata> {
   return getPageMetadata('process');
 }
 

@@ -10,8 +10,8 @@ import Title from '@/components/Title';
 import Description from '@/components/Description';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { contact, contactFormId } from '@/data/contact';
-
+// import { contact, contactFormId } from '@/data/contact';
+import { contactFormId } from '@/data/contact';
 const HELP_WITH_OPTIONS = [
   'customerCare',
   'outboundCalls',
@@ -358,51 +358,51 @@ export default function ContactStartConversation() {
             </Card>
           </div>
 
-          <div>
-            <Title variant="purple" className="mb-2">
-              {t('directTitle')}
-            </Title>
-            <Description size="17" className="mb-4">
-              {t('directDescription')}
-            </Description>
+          {/*<div>*/}
+          {/*  <Title variant="purple" className="mb-2">*/}
+          {/*    {t('directTitle')}*/}
+          {/*  </Title>*/}
+          {/*  <Description size="17" className="mb-4">*/}
+          {/*    {t('directDescription')}*/}
+          {/*  </Description>*/}
 
-            <Card className="bg-light-gray p-4">
-              <ul className="space-y-8">
-                <li className="space-y-1">
-                  <Image src="/icons/mail.svg" alt="" width={24} height={24} />
-                  <a
-                    href={`mailto:${contact.email}`}
-                    className="flex items-center gap-3 text-purple text-xl leading-[30px] hover:text-blue"
-                  >
-                    {contact.email}
-                  </a>
-                </li>
-                <li className="space-y-1">
-                  <Image
-                    src="/icons/phone-call.svg"
-                    alt=""
-                    width={24}
-                    height={24}
-                  />
-                  <a
-                    href={`tel:${contact.phone}`}
-                    className="flex items-center gap-3 text-purple text-xl leading-[30px] hover:text-blue"
-                  >
-                    {contact.phone}
-                  </a>
-                </li>
-                <li className="text-purple text-xl leading-[30px] space-y-1">
-                  <Image
-                    src="/icons/building-complex.svg"
-                    alt=""
-                    width={24}
-                    height={24}
-                  />
-                  <p>{contact.address}</p>
-                </li>
-              </ul>
-            </Card>
-          </div>
+          {/*  <Card className="bg-light-gray p-4">*/}
+          {/*    <ul className="space-y-8">*/}
+          {/*      <li className="space-y-1">*/}
+          {/*        <Image src="/icons/mail.svg" alt="" width={24} height={24} />*/}
+          {/*        <a*/}
+          {/*          href={`mailto:${contact.email}`}*/}
+          {/*          className="flex items-center gap-3 text-purple text-xl leading-[30px] hover:text-blue"*/}
+          {/*        >*/}
+          {/*          {contact.email}*/}
+          {/*        </a>*/}
+          {/*      </li>*/}
+          {/*      <li className="space-y-1">*/}
+          {/*        <Image*/}
+          {/*          src="/icons/phone-call.svg"*/}
+          {/*          alt=""*/}
+          {/*          width={24}*/}
+          {/*          height={24}*/}
+          {/*        />*/}
+          {/*        <a*/}
+          {/*          href={`tel:${contact.phone}`}*/}
+          {/*          className="flex items-center gap-3 text-purple text-xl leading-[30px] hover:text-blue"*/}
+          {/*        >*/}
+          {/*          {contact.phone}*/}
+          {/*        </a>*/}
+          {/*      </li>*/}
+          {/*      <li className="text-purple text-xl leading-[30px] space-y-1">*/}
+          {/*        <Image*/}
+          {/*          src="/icons/building-complex.svg"*/}
+          {/*          alt=""*/}
+          {/*          width={24}*/}
+          {/*          height={24}*/}
+          {/*        />*/}
+          {/*        <p>{contact.address}</p>*/}
+          {/*      </li>*/}
+          {/*    </ul>*/}
+          {/*  </Card>*/}
+          {/*</div>*/}
         </div>
       </div>
     </section>
