@@ -25,7 +25,6 @@ const teamItems = [
 export default async function ServicesPage() {
   const tHero = await getTranslations('ServicesHero');
   const tTeam = await getTranslations('ServicesTeam');
-  const tItems = await getTranslations('HomeOneTeam');
 
   return (
     <>
@@ -43,8 +42,8 @@ export default async function ServicesPage() {
         title={tTeam('title')}
         items={teamItems.map((item) => ({
           icon: item.icon,
-          title: tItems(`${item.key}.title`),
-          description: tItems(`${item.key}.description`),
+          title: tTeam(`${item.key}.title`),
+          description: tTeam(`${item.key}.description`),
         }))}
       />
       <ServicesCustomerJourney />

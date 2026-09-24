@@ -122,7 +122,7 @@
   },
   "HomeBuiltFor": {
     "title": "Built for Financial Customer Operations",
-    "description": "We handle customer support, outbound communication, sales assistance, and recurring customer contact as an extension of your operations.",
+    "description": "Money-related questions are rarely conversations customers want left hanging. Cinpc provides outsourced communication capacity for businesses working across financial services.",
     "fintech": {
       "title": "FinTech",
       "description": "Cover customer communication around digital financial products and services."
@@ -176,7 +176,31 @@
     "button": "Discuss Your Needs"
   },
   "ServicesTeam": {
-    "title": "Financial BPO Services"
+    "title": "Financial BPO Services",
+    "compliance": {
+      "title": "Compliance Support",
+      "description": "Support routine customer-facing processes around the requirements and procedures set by your business."
+    },
+    "collections": {
+      "title": "Collections Support",
+      "description": "Keep payment reminders, customer contact, and agreed collection follow-ups moving."
+    },
+    "customerCare": {
+      "title": "Customer Care",
+      "description": "Handle everyday questions, requests, account-related concerns, and customer support conversations."
+    },
+    "fraud": {
+      "title": "Fraud Support",
+      "description": "Support customer communication around suspicious activity, verification, and cases requiring further review."
+    },
+    "application": {
+      "title": "Application Support",
+      "description": "Keep customers informed through applications, information requests, and required next steps."
+    },
+    "complaint": {
+      "title": "Complaint Handling",
+      "description": "Give complaints a clear route through response, follow-up, and escalation when needed."
+    }
   },
   "ServicesCustomerJourney": {
     "title": "One Customer Journey, Fewer Handoffs",

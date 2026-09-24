@@ -176,7 +176,31 @@
     "button": "Hablemos de tus necesidades"
   },
   "ServicesTeam": {
-    "title": "Servicios BPO financieros"
+    "title": "Servicios BPO financieros",
+    "compliance": {
+      "title": "Soporte de cumplimiento normativo",
+      "description": "Gestionamos los procesos rutinarios de atención al cliente conforme a los requisitos y procedimientos establecidos por tu empresa."
+    },
+    "collections": {
+      "title": "Soporte de cobros",
+      "description": "Mantenemos en marcha los recordatorios de pago, el contacto con los clientes y los seguimientos de cobro acordados."
+    },
+    "customerCare": {
+      "title": "Atención al cliente",
+      "description": "Gestionamos consultas habituales, solicitudes, cuestiones relacionadas con las cuentas y conversaciones de atención al cliente."
+    },
+    "fraud": {
+      "title": "Soporte ante fraudes",
+      "description": "Gestionamos la comunicación con los clientes sobre actividades sospechosas, verificaciones y casos que requieren una revisión adicional."
+    },
+    "application": {
+      "title": "Soporte de solicitudes",
+      "description": "Mantenemos informados a los clientes durante sus solicitudes, peticiones de información y próximos pasos necesarios."
+    },
+    "complaint": {
+      "title": "Gestión de reclamaciones",
+      "description": "Damos a las reclamaciones un proceso claro de respuesta, seguimiento y escalamiento cuando sea necesario."
+    }
   },
   "ServicesCustomerJourney": {
     "title": "Un solo recorrido del cliente, menos transferencias",
