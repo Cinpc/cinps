@@ -1,11 +1,11 @@
-import { contact, contactFormHref } from '@/data/contact';
+import { contactFormHref } from '@/data/contact';
 import type { PolicySection } from '@/data/terms-conditions';
 
 export const cookiePolicy: PolicySection[] = [
   {
     id: 'intro',
     paragraphs: [
-      `This Cookie Policy explains how Cinpc uses cookies and similar technologies when you visit cinpc.com. Cinpc is a brand operated by CALL CENTER INP, registered at ${contact.address} under registration number [insert registration number].`,
+      'This Cookie Policy explains how Cinpc uses cookies and similar technologies when you visit cinpc.com. Cinpc is a brand operated by CALL CENTER INP.',
       'Cookies and similar technologies may be used to support the operation, security, functionality, and performance of the Cinpc website. This Policy explains what these technologies are, why they may be used, and the choices available to website visitors.',
     ],
   },
@@ -172,13 +172,10 @@ export const cookiePolicy: PolicySection[] = [
     id: 'contact-us',
     title: '16. Contact Us',
     paragraphs: [
-      'Questions or concerns about this Cookie Policy or the use of cookies on the Cinpc website can be directed to Cinpc through:',
-      ['Email: ', { href: `mailto:${contact.email}`, label: contact.email }],
-      ['Phone: ', { href: `tel:${contact.phone}`, label: contact.phone }],
       [
-        'Contact form: Available on the ',
-        { href: contactFormHref, label: 'Contact page' },
-        ' of the Cinpc website.',
+        'If you have questions or concerns about this Cookie Policy or the use of cookies on the Cinpc website, please use the ',
+        { href: contactFormHref, label: 'contact form' },
+        '.',
       ],
     ],
   },
@@ -188,7 +185,7 @@ export const cookiePolicyEs: PolicySection[] = [
   {
     id: 'intro',
     paragraphs: [
-      `Esta Política de Cookies explica cómo Cinpc utiliza cookies y tecnologías similares cuando visitas cinpc.com. Cinpc es una marca operada por CALL CENTER INP, registrada en ${contact.address} con el número de registro [insertar número de registro].`,
+      'Esta Política de Cookies explica cómo Cinpc utiliza cookies y tecnologías similares cuando visita cinpc.com. Cinpc es una marca operada por CALL CENTER INP.',
       'Las cookies y tecnologías similares pueden utilizarse para facilitar el funcionamiento, la seguridad, la funcionalidad y el rendimiento del sitio web de Cinpc. Esta Política explica qué son estas tecnologías, por qué pueden utilizarse y qué opciones tienen disponibles los visitantes del sitio web.',
     ],
   },
@@ -355,19 +352,10 @@ export const cookiePolicyEs: PolicySection[] = [
     id: 'contact-us',
     title: '16. Contacto',
     paragraphs: [
-      'Las preguntas o inquietudes relacionadas con esta Política de Cookies o con el uso de cookies en el sitio web de Cinpc pueden dirigirse a Cinpc a través de:',
       [
-        'Correo electrónico: ',
-        { href: `mailto:${contact.email}`, label: contact.email },
-      ],
-      [
-        'Teléfono: ',
-        { href: `tel:${contact.phone}`, label: contact.phone },
-      ],
-      [
-        'Formulario de contacto: Disponible en la página ',
-        { href: contactFormHref, label: 'Contacto' },
-        ' del sitio web de Cinpc.',
+        'Si tiene preguntas o inquietudes sobre esta Política de Cookies o el uso de cookies en el sitio web de Cinpc, utilice el ',
+        { href: contactFormHref, label: 'formulario de contacto' },
+        '.',
       ],
     ],
   },

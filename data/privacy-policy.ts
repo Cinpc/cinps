@@ -1,4 +1,4 @@
-import { contact, contactFormHref } from '@/data/contact';
+import { contactFormHref } from '@/data/contact';
 import type { PolicySection } from '@/data/terms-conditions';
 
 export const privacyPolicy: PolicySection[] = [
@@ -6,7 +6,7 @@ export const privacyPolicy: PolicySection[] = [
     id: 'intro',
     paragraphs: [
       'This Privacy Policy explains how Cinpc collects, uses, stores, and otherwise processes personal data when you visit cinpc.com, contact us, request information or a quote, or otherwise interact with us.',
-      `Cinpc is a brand operated by CALL CENTER INP, registered at ${contact.address} under registration number [insert registration number].`,
+      'Cinpc is a brand operated by CALL CENTER INP.',
       'We process personal data in accordance with applicable data protection and privacy laws. The specific rules and rights that apply to you may depend on your location and the circumstances in which your personal data is processed.',
     ],
   },
@@ -52,8 +52,7 @@ export const privacyPolicy: PolicySection[] = [
     title: 'Information You Provide Directly',
     nav: false,
     paragraphs: [
-      'If you communicate with Cinpc by email, phone, through the Contact page, or through another available business communication channel, we may collect the information you provide during that communication.',
-      'This may include your name, job title or business role, company details, contact information, service requirements, correspondence, and other information relevant to your inquiry or business relationship with Cinpc.',
+      'If you submit an inquiry through the Cinpc contact form, we may collect the information you provide in your request and any subsequent communications about it. This may include your name, job title or business role, company details, contact information, service requirements, correspondence, and other information relevant to your inquiry or business relationship with Cinpc.',
     ],
   },
   {
@@ -153,7 +152,7 @@ export const privacyPolicy: PolicySection[] = [
     id: 'business-communications',
     title: '6. Business Communications',
     paragraphs: [
-      'If you contact Cinpc regarding its services, we may use your business contact information to respond to your inquiry and continue communications related to your request.',
+      'If you submit an inquiry through the Cinpc contact form, we may use the contact information you provide to respond and discuss your request.',
       'Where you represent a prospective or existing business client, we may also retain relevant communications and contact information for relationship management, service administration, contractual discussions, and legitimate business recordkeeping.',
       'Cinpc does not treat the submission of a service inquiry as unrestricted permission to use your contact details for unrelated purposes.',
     ],
@@ -271,9 +270,9 @@ export const privacyPolicy: PolicySection[] = [
     title: '15. Exercising Your Rights',
     paragraphs: [
       [
-        'To make a privacy request concerning personal data processed directly by Cinpc, contact us using the details provided at the end of this Privacy Policy or through the contact form available on the ',
-        { href: contactFormHref, label: 'Contact page' },
-        '.',
+        'To make a privacy request concerning personal data processed directly by Cinpc, please use the ',
+        { href: contactFormHref, label: 'contact form' },
+        ' available on our website.',
       ],
       'We may need to verify your identity before completing a request. We may also request additional information where necessary to identify the relevant data or understand the scope of your request.',
       'If Cinpc processes the relevant information solely on behalf of a business client, we may direct your request to that client or assist the client with responding, depending on our legal role and contractual obligations.',
@@ -314,13 +313,10 @@ export const privacyPolicy: PolicySection[] = [
     id: 'contact-us',
     title: '20. Contact Us',
     paragraphs: [
-      'Questions, requests, or concerns regarding this Privacy Policy or the processing of personal data by Cinpc can be submitted through:',
-      ['Email: ', { href: `mailto:${contact.email}`, label: contact.email }],
-      ['Phone: ', { href: `tel:${contact.phone}`, label: contact.phone }],
       [
-        'Contact form: Available on the ',
-        { href: contactFormHref, label: 'Contact page' },
-        ' of the Cinpc website.',
+        'If you have questions, requests, or concerns about this Privacy Policy or how Cinpc processes personal data, please use the ',
+        { href: contactFormHref, label: 'contact form' },
+        '.',
       ],
     ],
   },
@@ -331,8 +327,7 @@ export const privacyPolicyEs: PolicySection[] = [
     id: 'intro',
     paragraphs: [
       'Esta Política de Privacidad explica cómo Cinpc recopila, utiliza, almacena y trata de cualquier otra forma los datos personales cuando visitas cinpc.com, contactas con nosotros, solicitas información o un presupuesto, o interactúas con nosotros de cualquier otra manera.',
-      `Cinpc es una marca operada por CALL CENTER INP, registrada en ${contact.address} con el número de registro [insertar número de registro].`,
-      'Tratamos los datos personales de conformidad con las leyes aplicables en materia de protección de datos y privacidad. Las normas y los derechos específicos que se te apliquen pueden depender de tu ubicación y de las circunstancias en las que se traten tus datos personales.',
+      'Cinpc es una marca operada por CALL CENTER INP. Tratamos los datos personales de conformidad con las leyes aplicables en materia de protección de datos y privacidad. Las normas y los derechos concretos que le correspondan pueden depender de su ubicación y de las circunstancias en las que se traten sus datos personales.',
     ],
   },
   {
@@ -377,8 +372,7 @@ export const privacyPolicyEs: PolicySection[] = [
     title: 'Información que proporcionas directamente',
     nav: false,
     paragraphs: [
-      'Si te comunicas con Cinpc por correo electrónico, teléfono, a través de la página Contacto o mediante cualquier otro canal de comunicación empresarial disponible, podemos recopilar la información que proporciones durante dicha comunicación.',
-      'Esto puede incluir tu nombre, cargo o función profesional, información de la empresa, datos de contacto, requisitos del servicio, correspondencia y otra información relevante para tu consulta o relación comercial con Cinpc.',
+      'Si envía una consulta a través del formulario de contacto de Cinpc, podemos recopilar la información que proporcione en su solicitud y en cualquier comunicación posterior relacionada con ella. Esta información puede incluir su nombre, cargo o función profesional, datos de la empresa, información de contacto, necesidades de servicio, correspondencia y otros datos relevantes para su consulta o relación comercial con Cinpc.',
     ],
   },
   {
@@ -478,9 +472,9 @@ export const privacyPolicyEs: PolicySection[] = [
     id: 'business-communications',
     title: '6. Comunicaciones comerciales',
     paragraphs: [
-      'Si contactas con Cinpc en relación con sus servicios, podemos utilizar tus datos de contacto profesionales para responder a tu consulta y continuar las comunicaciones relacionadas con tu solicitud.',
-      'Cuando representes a un cliente empresarial potencial o existente, también podemos conservar las comunicaciones y los datos de contacto relevantes para gestionar la relación, administrar los servicios, mantener conversaciones contractuales y conservar registros empresariales legítimos.',
-      'Cinpc no considera que el envío de una consulta sobre sus servicios constituya un permiso ilimitado para utilizar tus datos de contacto con fines no relacionados.',
+      'Si envía una consulta a través del formulario de contacto de Cinpc, podemos utilizar la información de contacto que proporcione para responderle y comentar su solicitud.',
+      'Si representa a un cliente empresarial potencial o actual, también podemos conservar las comunicaciones y la información de contacto pertinentes para gestionar la relación, administrar los servicios, mantener conversaciones contractuales y conservar los registros comerciales necesarios.',
+      'Cinpc no considera que el envío de una consulta sobre sus servicios constituzca una autorización ilimitada para utilizar sus datos de contacto con fines no relacionados.',
     ],
   },
   {
@@ -596,9 +590,9 @@ export const privacyPolicyEs: PolicySection[] = [
     title: '15. Ejercicio de tus derechos',
     paragraphs: [
       [
-        'Para realizar una solicitud relacionada con datos personales tratados directamente por Cinpc, contacta con nosotros utilizando los datos proporcionados al final de esta Política de Privacidad o mediante el formulario de contacto disponible en la página ',
-        { href: contactFormHref, label: 'Contacto' },
-        '.',
+        'Para presentar una solicitud relativa a los datos personales tratados directamente por Cinpc, utilice el ',
+        { href: contactFormHref, label: 'formulario de contacto' },
+        ' disponible en nuestro sitio web.',
       ],
       'Es posible que necesitemos verificar tu identidad antes de completar una solicitud. También podemos solicitar información adicional cuando sea necesario para identificar los datos correspondientes o comprender el alcance de tu solicitud.',
       'Si Cinpc trata la información correspondiente exclusivamente en nombre de un cliente empresarial, podemos dirigir tu solicitud a dicho cliente o ayudarle a responder, dependiendo de nuestra función legal y nuestras obligaciones contractuales.',
@@ -639,19 +633,10 @@ export const privacyPolicyEs: PolicySection[] = [
     id: 'contact-us',
     title: '20. Contacto',
     paragraphs: [
-      'Las preguntas, solicitudes o inquietudes relacionadas con esta Política de Privacidad o con el tratamiento de datos personales por parte de Cinpc pueden enviarse a través de:',
       [
-        'Correo electrónico: ',
-        { href: `mailto:${contact.email}`, label: contact.email },
-      ],
-      [
-        'Teléfono: ',
-        { href: `tel:${contact.phone}`, label: contact.phone },
-      ],
-      [
-        'Formulario de contacto: Disponible en la página ',
-        { href: contactFormHref, label: 'Contacto' },
-        ' del sitio web de Cinpc.',
+        'Si tiene preguntas, solicitudes o inquietudes sobre esta Política de Privacidad o sobre cómo Cinpc trata los datos personales, utilice el ',
+        { href: contactFormHref, label: 'formulario de contacto' },
+        '.',
       ],
     ],
   },

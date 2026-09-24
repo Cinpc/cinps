@@ -1,11 +1,11 @@
-import { contact, contactFormHref } from '@/data/contact';
+import { contactFormHref } from '@/data/contact';
 import type { PolicySection } from '@/data/terms-conditions';
 
 export const refundPolicy: PolicySection[] = [
   {
     id: 'intro',
     paragraphs: [
-      `This Refund Policy explains how refund requests, billing adjustments, cancellations, and payments for Cinpc services are handled. Cinpc is a brand operated by CALL CENTER INP, registered at ${contact.address} under registration number [insert registration number].`,
+      'This Refund Policy explains how refund requests, billing adjustments, cancellations, and payments for Cinpc services are handled. Cinpc is a brand operated by CALL CENTER INP.',
       "Cinpc provides business-to-business call center outsourcing and BPO services that are scoped around each client's operational requirements. Because services may involve preparation, staffing, onboarding, training, capacity allocation, and ongoing operational work, refund eligibility depends on the circumstances of the relevant engagement and any specific commercial terms agreed with the client.",
     ],
   },
@@ -190,13 +190,10 @@ export const refundPolicy: PolicySection[] = [
     id: 'contact-us',
     title: '19. Contact Us',
     paragraphs: [
-      'Questions about payments, billing adjustments, cancellations, or refund requests can be directed to Cinpc through:',
-      ['Email: ', { href: `mailto:${contact.email}`, label: contact.email }],
-      ['Phone: ', { href: `tel:${contact.phone}`, label: contact.phone }],
       [
-        'Contact form: Available on the ',
-        { href: contactFormHref, label: 'Contact page' },
-        ' of the Cinpc website.',
+        'If you have questions about payments, billing adjustments, cancellations, or refunds, please use the ',
+        { href: contactFormHref, label: 'contact form' },
+        '.',
       ],
     ],
   },
@@ -206,7 +203,7 @@ export const refundPolicyEs: PolicySection[] = [
   {
     id: 'intro',
     paragraphs: [
-      `Esta Política de Reembolso explica cómo se gestionan las solicitudes de reembolso, los ajustes de facturación, las cancelaciones y los pagos relacionados con los servicios de Cinpc. Cinpc es una marca operada por CALL CENTER INP, registrada en ${contact.address} con el número de registro [insertar número de registro].`,
+      'Esta Política de Reembolsos explica cómo se gestionan las solicitudes de reembolso, los ajustes de facturación, las cancelaciones y los pagos por los servicios de Cinpc. Cinpc es una marca operada por CALL CENTER INP.',
       'Cinpc presta servicios B2B de externalización de call center y BPO cuyo alcance se adapta a las necesidades operativas de cada cliente. Debido a que los servicios pueden implicar preparación, asignación de personal, incorporación, formación, asignación de capacidad y trabajo operativo continuo, la posibilidad de obtener un reembolso depende de las circunstancias del encargo correspondiente y de las condiciones comerciales específicas acordadas con el cliente.',
     ],
   },
@@ -391,19 +388,10 @@ export const refundPolicyEs: PolicySection[] = [
     id: 'contact-us',
     title: '19. Contacto',
     paragraphs: [
-      'Las preguntas sobre pagos, ajustes de facturación, cancelaciones o solicitudes de reembolso pueden dirigirse a Cinpc a través de:',
       [
-        'Correo electrónico: ',
-        { href: `mailto:${contact.email}`, label: contact.email },
-      ],
-      [
-        'Teléfono: ',
-        { href: `tel:${contact.phone}`, label: contact.phone },
-      ],
-      [
-        'Formulario de contacto: Disponible en la página ',
-        { href: contactFormHref, label: 'Contacto' },
-        ' del sitio web de Cinpc.',
+        'Si tiene preguntas sobre pagos, ajustes de facturación, cancelaciones o reembolsos, utilice el ',
+        { href: contactFormHref, label: 'formulario de contacto' },
+        '.',
       ],
     ],
   },

@@ -1,4 +1,4 @@
-import { contact, contactFormHref } from '@/data/contact';
+import { contactFormHref } from '@/data/contact';
 
 export type PolicyLink = {
   href: string;
@@ -28,7 +28,7 @@ export const termsConditions: PolicySection[] = [
     id: 'intro',
     paragraphs: [
       'These Terms and Conditions govern access to and use of the Cinpc website at cinpc.com and the business services made available through it.',
-      `Cinpc is a brand operated by CALL CENTER INP, registered at ${contact.address} under registration number [insert registration number].`,
+      'Cinpc is a brand operated by CALL CENTER INP.',
       'By accessing the website, submitting an inquiry, requesting a quote, or engaging Cinpc for services, you acknowledge that you have read and understood these Terms and Conditions and agree to be bound by the provisions that apply to your use of the website and services.',
     ],
   },
@@ -208,7 +208,6 @@ export const termsConditions: PolicySection[] = [
         ' where that policy applies.',
       ],
       'Because Cinpc provides business services that may involve staffing, preparation, onboarding, training, capacity allocation, and ongoing operational work, eligibility for a refund cannot be assumed merely because a client decides to discontinue a service.',
-      'Any request concerning a payment or refund should be submitted using the Cinpc contact details provided on the website.',
     ],
   },
   {
@@ -256,9 +255,8 @@ export const termsConditions: PolicySection[] = [
     id: 'governing-law-and-jurisdiction',
     title: '23. Governing Law and Jurisdiction',
     paragraphs: [
-      'These Terms and Conditions are governed by the laws of [insert governing country/jurisdiction], without regard to conflict-of-law principles where applicable.',
-      'Any dispute arising from these Terms, the website, or services that is not governed by a separate agreement will be subject to the jurisdiction of the competent courts of [insert jurisdiction].',
-      'Where a separate service agreement contains its own governing-law or dispute-resolution provisions, those provisions apply to the relevant engagement.',
+      'Any dispute concerning these Terms or use of the Cinpc website will be handled in accordance with the laws and jurisdiction applicable to the dispute.',
+      'Where a separate service agreement specifies the governing law or a dispute resolution procedure, those provisions apply to the relevant engagement.',
     ],
   },
   {
@@ -272,19 +270,10 @@ export const termsConditions: PolicySection[] = [
     id: 'contact-us',
     title: '25. Contact Us',
     paragraphs: [
-      'Questions about these Terms and Conditions or the use of Cinpc services can be directed to:',
       [
-        'Email: ',
-        { href: `mailto:${contact.email}`, label: contact.email },
-      ],
-      [
-        'Phone: ',
-        { href: `tel:${contact.phone}`, label: contact.phone },
-      ],
-      [
-        'Contact form: Available on the ',
-        { href: contactFormHref, label: 'Contact page' },
-        ' of the Cinpc website.',
+        'If you have questions about these Terms and Conditions or Cinpc services, please use the ',
+        { href: contactFormHref, label: 'contact form' },
+        '.',
       ],
     ],
   },
@@ -295,8 +284,7 @@ export const termsConditionsEs: PolicySection[] = [
     id: 'intro',
     paragraphs: [
       'Estos Términos y Condiciones regulan el acceso y el uso del sitio web de Cinpc en cinpc.com, así como de los servicios empresariales disponibles a través de este.',
-      `Cinpc es una marca operada por CALL CENTER INP, registrada en ${contact.address} con el número de registro [insertar número de registro].`,
-      'Al acceder al sitio web, enviar una consulta, solicitar un presupuesto o contratar los servicios de Cinpc, reconoces que has leído y comprendido estos Términos y Condiciones y aceptas quedar sujeto a las disposiciones aplicables al uso del sitio web y de los servicios.',
+      'Cinpc es una marca operada por CALL CENTER INP. Al acceder al sitio web, enviar una consulta, solicitar un presupuesto o contratar los servicios de Cinpc, usted reconoce que ha leído y comprendido estos Términos y Condiciones y acepta quedar sujeto a las disposiciones aplicables al uso que haga del sitio web y de los servicios.',
     ],
   },
   {
@@ -475,7 +463,6 @@ export const termsConditionsEs: PolicySection[] = [
         ' de Cinpc cuando dicha política sea aplicable.',
       ],
       'Debido a que Cinpc presta servicios empresariales que pueden implicar contratación de personal, preparación, incorporación, formación, asignación de capacidad y trabajo operativo continuo, no puede asumirse que existe derecho a un reembolso simplemente porque un cliente decida dejar de utilizar un servicio.',
-      'Cualquier solicitud relacionada con un pago o reembolso debe enviarse utilizando los datos de contacto de Cinpc proporcionados en el sitio web.',
     ],
   },
   {
@@ -523,9 +510,8 @@ export const termsConditionsEs: PolicySection[] = [
     id: 'governing-law-and-jurisdiction',
     title: '23. Legislación aplicable y jurisdicción',
     paragraphs: [
-      'Estos Términos y Condiciones se rigen por las leyes de [insertar país/jurisdicción aplicable], sin perjuicio de los principios sobre conflictos de leyes cuando correspondan.',
-      'Cualquier disputa derivada de estos Términos, del sitio web o de los servicios que no esté regulada por un acuerdo independiente estará sujeta a la jurisdicción de los tribunales competentes de [insertar jurisdicción].',
-      'Cuando un acuerdo de prestación de servicios independiente contenga sus propias disposiciones sobre legislación aplicable o resolución de disputas, dichas disposiciones se aplicarán al encargo correspondiente.',
+      'Cualquier disputa relacionada con estos Términos o con el uso del sitio web de Cinpc se resolverá de conformidad con las leyes y la jurisdicción aplicables a dicha disputa.',
+      'Cuando un contrato de servicios independiente establezca la ley aplicable o un procedimiento de resolución de disputas, esas disposiciones se aplicarán a la relación contractual correspondiente.',
     ],
   },
   {
@@ -539,19 +525,10 @@ export const termsConditionsEs: PolicySection[] = [
     id: 'contact-us',
     title: '25. Contacto',
     paragraphs: [
-      'Las preguntas sobre estos Términos y Condiciones o sobre el uso de los servicios de Cinpc pueden dirigirse a:',
       [
-        'Correo electrónico: ',
-        { href: `mailto:${contact.email}`, label: contact.email },
-      ],
-      [
-        'Teléfono: ',
-        { href: `tel:${contact.phone}`, label: contact.phone },
-      ],
-      [
-        'Formulario de contacto: Disponible en la página ',
-        { href: contactFormHref, label: 'Contacto' },
-        ' del sitio web de Cinpc.',
+        'Si tiene preguntas sobre estos Términos y Condiciones o los servicios de Cinpc, utilice el ',
+        { href: contactFormHref, label: 'formulario de contacto' },
+        '.',
       ],
     ],
   },

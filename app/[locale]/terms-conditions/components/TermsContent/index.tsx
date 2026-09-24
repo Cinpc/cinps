@@ -106,9 +106,7 @@ export default function TermsContent({
                   ))}
 
                   {section.listIntro ? (
-                    <Description size="base" className="mb-0">
-                      {section.listIntro}
-                    </Description>
+                    <Description size="base">{section.listIntro}</Description>
                   ) : null}
 
                   {section.list ? (
