@@ -284,7 +284,8 @@ export const termsConditionsEs: PolicySection[] = [
     id: 'intro',
     paragraphs: [
       'Estos Términos y Condiciones regulan el acceso y el uso del sitio web de Cinpc en cinpc.com, así como de los servicios empresariales disponibles a través de este.',
-      'Cinpc es una marca operada por CALL CENTER INP. Al acceder al sitio web, enviar una consulta, solicitar un presupuesto o contratar los servicios de Cinpc, usted reconoce que ha leído y comprendido estos Términos y Condiciones y acepta quedar sujeto a las disposiciones aplicables al uso que haga del sitio web y de los servicios.',
+      'Cinpc es una marca operada por CALL CENTER INP.',
+      'Al acceder al sitio web, enviar una consulta, solicitar un presupuesto o contratar los servicios de Cinpc, usted reconoce que ha leído y comprendido estos Términos y Condiciones y acepta quedar sujeto a las disposiciones aplicables al uso que haga del sitio web y de los servicios.',
     ],
   },
   {

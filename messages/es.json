@@ -366,7 +366,7 @@
   },
   "ContactStartConversation": {
     "title": "Inicia la conversación",
-    "description": "Danos la información básica y empezaremos desde ahí.",
+    "description": "Cuéntenos qué tareas de atención al cliente ocupan más tiempo a su equipo",
     "fullName": "Nombre completo*",
     "fullNamePlaceholder": "Introduce tu nombre completo",
     "fullNameError": "Introduce tu nombre completo",

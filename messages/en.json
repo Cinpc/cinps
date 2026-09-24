@@ -366,7 +366,7 @@
   },
   "ContactStartConversation": {
     "title": "Start the Conversation",
-    "description": "Give us the basics, and we'll start from there.",
+    "description": "Tell us which customer tasks are taking up your team’s time.",
     "fullName": "Full Name*",
     "fullNamePlaceholder": "Enter your full name",
     "fullNameError": "Enter your full name",

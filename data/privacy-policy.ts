@@ -327,7 +327,8 @@ export const privacyPolicyEs: PolicySection[] = [
     id: 'intro',
     paragraphs: [
       'Esta Política de Privacidad explica cómo Cinpc recopila, utiliza, almacena y trata de cualquier otra forma los datos personales cuando visitas cinpc.com, contactas con nosotros, solicitas información o un presupuesto, o interactúas con nosotros de cualquier otra manera.',
-      'Cinpc es una marca operada por CALL CENTER INP. Tratamos los datos personales de conformidad con las leyes aplicables en materia de protección de datos y privacidad. Las normas y los derechos concretos que le correspondan pueden depender de su ubicación y de las circunstancias en las que se traten sus datos personales.',
+      'Cinpc es una marca operada por CALL CENTER INP.',
+      'Tratamos los datos personales de conformidad con las leyes aplicables en materia de protección de datos y privacidad. Las normas y los derechos concretos que le correspondan pueden depender de su ubicación y de las circunstancias en las que se traten sus datos personales.',
     ],
   },
   {
