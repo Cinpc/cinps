@@ -12,7 +12,7 @@
   },
   "Footer": {
     "description": "Atención al cliente y soluciones BPO para empresas financieras.",
-    "copyright": "© {year} CALL CENTER INP. Todos los derechos reservados.",
+    "copyright": "© {year} Call Center Inp. Todos los derechos reservados.",
     "explore": "Explorar",
     "company": "Empresa",
     "contact": "Contacto",
@@ -327,7 +327,7 @@
   },
   "CompanyAbout": {
     "title": "Sobre Cinpc",
-    "description": "Cinpc está gestionada por CALL CENTER INP y ofrece soporte externalizado de atención al cliente y operaciones para empresas del sector financiero.",
+    "description": "Cinpc está gestionada por Call Center Inp y ofrece soporte externalizado de atención al cliente y operaciones para empresas del sector financiero.",
     "descriptionSecond": "Trabajamos como una extensión de los equipos internos, asumiendo la responsabilidad de determinadas conversaciones con los clientes, seguimientos y tareas recurrentes de soporte."
   },
   "CompanyCloseEnough": {

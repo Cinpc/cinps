@@ -5,7 +5,7 @@ export const refundPolicy: PolicySection[] = [
   {
     id: 'intro',
     paragraphs: [
-      'This Refund Policy explains how refund requests, billing adjustments, cancellations, and payments for Cinpc services are handled. Cinpc is a brand operated by CALL CENTER INP.',
+      'This Refund Policy explains how refund requests, billing adjustments, cancellations, and payments for Cinpc services are handled. Cinpc is a brand operated by Call Center Inp.',
       "Cinpc provides business-to-business call center outsourcing and BPO services that are scoped around each client's operational requirements. Because services may involve preparation, staffing, onboarding, training, capacity allocation, and ongoing operational work, refund eligibility depends on the circumstances of the relevant engagement and any specific commercial terms agreed with the client.",
     ],
   },
@@ -203,7 +203,7 @@ export const refundPolicyEs: PolicySection[] = [
   {
     id: 'intro',
     paragraphs: [
-      'Esta Política de Reembolsos explica cómo se gestionan las solicitudes de reembolso, los ajustes de facturación, las cancelaciones y los pagos por los servicios de Cinpc. Cinpc es una marca operada por CALL CENTER INP.',
+      'Esta Política de Reembolsos explica cómo se gestionan las solicitudes de reembolso, los ajustes de facturación, las cancelaciones y los pagos por los servicios de Cinpc. Cinpc es una marca operada por Call Center Inp.',
       'Cinpc presta servicios B2B de externalización de call center y BPO cuyo alcance se adapta a las necesidades operativas de cada cliente. Debido a que los servicios pueden implicar preparación, asignación de personal, incorporación, formación, asignación de capacidad y trabajo operativo continuo, la posibilidad de obtener un reembolso depende de las circunstancias del encargo correspondiente y de las condiciones comerciales específicas acordadas con el cliente.',
     ],
   },

@@ -28,7 +28,7 @@ export const termsConditions: PolicySection[] = [
     id: 'intro',
     paragraphs: [
       'These Terms and Conditions govern access to and use of the Cinpc website at cinpc.com and the business services made available through it.',
-      'Cinpc is a brand operated by CALL CENTER INP.',
+      'Cinpc is a brand operated by Call Center Inp.',
       'By accessing the website, submitting an inquiry, requesting a quote, or engaging Cinpc for services, you acknowledge that you have read and understood these Terms and Conditions and agree to be bound by the provisions that apply to your use of the website and services.',
     ],
   },
@@ -284,7 +284,7 @@ export const termsConditionsEs: PolicySection[] = [
     id: 'intro',
     paragraphs: [
       'Estos Términos y Condiciones regulan el acceso y el uso del sitio web de Cinpc en cinpc.com, así como de los servicios empresariales disponibles a través de este.',
-      'Cinpc es una marca operada por CALL CENTER INP.',
+      'Cinpc es una marca operada por Call Center Inp.',
       'Al acceder al sitio web, enviar una consulta, solicitar un presupuesto o contratar los servicios de Cinpc, usted reconoce que ha leído y comprendido estos Términos y Condiciones y acepta quedar sujeto a las disposiciones aplicables al uso que haga del sitio web y de los servicios.',
     ],
   },

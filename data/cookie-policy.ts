@@ -5,7 +5,7 @@ export const cookiePolicy: PolicySection[] = [
   {
     id: 'intro',
     paragraphs: [
-      'This Cookie Policy explains how Cinpc uses cookies and similar technologies when you visit cinpc.com. Cinpc is a brand operated by CALL CENTER INP.',
+      'This Cookie Policy explains how Cinpc uses cookies and similar technologies when you visit cinpc.com. Cinpc is a brand operated by Call Center Inp.',
       'Cookies and similar technologies may be used to support the operation, security, functionality, and performance of the Cinpc website. This Policy explains what these technologies are, why they may be used, and the choices available to website visitors.',
     ],
   },
@@ -185,7 +185,7 @@ export const cookiePolicyEs: PolicySection[] = [
   {
     id: 'intro',
     paragraphs: [
-      'Esta Política de Cookies explica cómo Cinpc utiliza cookies y tecnologías similares cuando visita cinpc.com. Cinpc es una marca operada por CALL CENTER INP.',
+      'Esta Política de Cookies explica cómo Cinpc utiliza cookies y tecnologías similares cuando visita cinpc.com. Cinpc es una marca operada por Call Center Inp.',
       'Las cookies y tecnologías similares pueden utilizarse para facilitar el funcionamiento, la seguridad, la funcionalidad y el rendimiento del sitio web de Cinpc. Esta Política explica qué son estas tecnologías, por qué pueden utilizarse y qué opciones tienen disponibles los visitantes del sitio web.',
     ],
   },
