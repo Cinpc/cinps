@@ -4,6 +4,7 @@ import Description from '@/components/Description';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Link } from '@/i18n/navigation';
+import { contactFormHref } from '@/data/contact';
 
 export default async function HomeHaveCalls() {
   const t = await getTranslations('HomeHaveCalls');
@@ -30,7 +31,9 @@ export default async function HomeHaveCalls() {
               {t('description')}
             </Description>
 
-            <Button render={<Link href="/contact" />}>{t('button')}</Button>
+            <Button render={<Link href={contactFormHref} />}>
+              {t('button')}
+            </Button>
           </div>
         </div>
       </div>

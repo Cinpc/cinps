@@ -1,9 +1,12 @@
 import Image from 'next/image';
+import { getTranslations } from 'next-intl/server';
 import { Card } from '@/components/ui/card';
 import Description from '@/components/Description';
 import Title from '@/components/Title';
 
-export default function ServicesCustomerJourney() {
+export default async function ServicesCustomerJourney() {
+  const t = await getTranslations('ServicesCustomerJourney');
+
   return (
     <section className="md:py-16 md:bg-light-gray mb-16">
       <div className="container">
@@ -30,14 +33,11 @@ export default function ServicesCustomerJourney() {
               variant="purple"
               className="lg:leading-[140.625%] leading-[142.857%]"
             >
-              One Customer Journey, Fewer Handoffs
+              {t('title')}
             </Title>
 
             <Description size="17" className="leading-[1.529]">
-              A customer may start with a simple question and end up needing
-              verification, a follow-up, or another team. Cinpc can connect
-              several support functions within one outsourced setup instead of
-              treating every conversation as a separate task.
+              {t('description')}
             </Description>
           </Card>
         </div>

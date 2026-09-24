@@ -6,6 +6,7 @@ import { getLocale } from 'next-intl/server';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { getPageMetadata } from '@/i18n/metadata';
 
 const poppins = Poppins({
   variable: '--font-poppins',
@@ -25,22 +26,25 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 });
 
-export const metadata: Metadata = {
-  metadataBase: new URL('https://cinpc.com'),
-  title: 'Call Center Outsourcing Services | Cinpc',
-  description:
-    'Outsource customer support and financial BPO operations with Cinpc. Get flexible call center support built around your business workflows.',
-  icons: {
-    icon: '/favicon.png',
-  },
-  openGraph: {
-    images: ['/meta.png'],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    images: ['/meta.png'],
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const page = await getPageMetadata('home');
+
+  return {
+    metadataBase: new URL('https://cinpc.com'),
+    title: page.title,
+    description: page.description,
+    icons: {
+      icon: '/favicon.png',
+    },
+    openGraph: {
+      images: ['/meta.png'],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      images: ['/meta.png'],
+    },
+  };
+}
 
 export default async function RootLayout({ children }: LayoutProps<'/'>) {
   const locale = await getLocale();

@@ -1,3 +1,4 @@
+import { getTranslations } from 'next-intl/server';
 import Title from '@/components/Title';
 import Description from '@/components/Description';
 import Image from 'next/image';
@@ -8,23 +9,17 @@ const images = [
   '/company/about-three.png',
 ];
 
-export default function CompanyAbout() {
+export default async function CompanyAbout() {
+  const t = await getTranslations('CompanyAbout');
+
   return (
     <section className="lg:pb-16 pt-16">
       <div className="container">
         <div className="grid lg:grid-cols-[1.1fr_1.3248fr] items-start gap-y-2 gap-x-28 mb-10">
-          <Title variant="purple">About Cinpc</Title>
+          <Title variant="purple">{t('title')}</Title>
           <div className="space-y-4">
-            <Description>
-              Cinpc is operated by CALL CENTER INP and provides outsourced
-              customer and operational support across the financial sector.
-            </Description>
-
-            <Description>
-              We work as an extension of internal teams, taking responsibility
-              for defined customer conversations, follow-ups, and recurring
-              support tasks.
-            </Description>
+            <Description>{t('description')}</Description>
+            <Description>{t('descriptionSecond')}</Description>
           </div>
         </div>
 

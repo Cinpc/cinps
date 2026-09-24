@@ -1,27 +1,29 @@
-import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
+import { getPageMetadata } from '@/i18n/metadata';
 import HomeHero from '@/app/[locale]/(home)/HomeHero';
 import ProcessGetStarted from '@/app/[locale]/process/components/ProcessGetStarted';
 import ProcessClearLines from '@/app/[locale]/process/components/ProcessClearLines';
 import ProcessYourWorkflow from '@/app/[locale]/process/components/ProcessYourWorkflow';
 import ProcessBuilt from '@/app/[locale]/process/components/ProcessBuilt';
 import ProcessReady from '@/app/[locale]/process/components/ProcessReady';
+import { contactFormHref } from '@/data/contact';
 
-export const metadata: Metadata = {
-  title: 'Call Center Outsourcing Process | Cinpc',
-  description:
-    'See how Cinpc sets up outsourced call center operations, from defining workflows and responsibilities to launch and ongoing adjustments.',
-};
+export function generateMetadata() {
+  return getPageMetadata('process');
+}
 
-export default function ProcessPage() {
+export default async function ProcessPage() {
+  const t = await getTranslations('ProcessHero');
+
   return (
     <>
       <HomeHero
-        title="From Your Queue to Ours"
-        description="A clear setup keeps outsourcing simple. We define the work, prepare the workflow, launch the service, and adjust it as your operation changes."
+        title={t('title')}
+        description={t('description')}
         imageSrc="/process/hero.png"
         imageSrcMobile="/process/hero-mobile.png"
-        buttonText="Start a Conversation"
-        buttonHref="/contact"
+        buttonText={t('button')}
+        buttonHref={contactFormHref}
         contentClassName="max-md:min-h-112.5"
         cardClassName="max-w-181"
       />

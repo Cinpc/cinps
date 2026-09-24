@@ -24,6 +24,44 @@
     "cookie-policy": "Cookie Policy",
     "refund-policy": "Refund Policy"
   },
+  "TermsHero": {
+    "title": "Terms and Conditions"
+  },
+  "PrivacyHero": {
+    "title": "Privacy Policy"
+  },
+  "CookieHero": {
+    "title": "Cookie Policy"
+  },
+  "RefundHero": {
+    "title": "Refund Policy"
+  },
+  "Meta": {
+    "home": {
+      "title": "Call Center Outsourcing Services | Cinpc",
+      "description": "Outsource customer support and financial BPO operations with Cinpc. Get flexible call center support built around your business workflows."
+    },
+    "services": {
+      "title": "Financial Call Center Outsourcing Services | Cinpc",
+      "description": "Explore Cinpc financial BPO services, including customer care, collections, compliance, application, fraud, and complaint support."
+    },
+    "solutions": {
+      "title": "Call Center Solutions for Financial Services | Cinpc",
+      "description": "Explore outsourced call center solutions for FinTech, lending, insurance, and financial services businesses with Cinpc."
+    },
+    "process": {
+      "title": "Call Center Outsourcing Process | Cinpc",
+      "description": "See how Cinpc sets up outsourced call center operations, from defining workflows and responsibilities to launch and ongoing adjustments."
+    },
+    "company": {
+      "title": "Financial Call Center Outsourcing Company | Cinpc",
+      "description": "Learn about Cinpc, a call center outsourcing company providing customer and operational support for businesses across the financial sector."
+    },
+    "contact": {
+      "title": "Contact Cinpc | Call Center Outsourcing Services",
+      "description": "Contact Cinpc to discuss your call center outsourcing needs, customer operations, workflows, expected volumes, and required support."
+    }
+  },
   "HomeHero": {
     "title": "Give Every Call Somewhere to Go",
     "description": "When customer calls start competing with the work your team was actually hired to do, Cinpc takes them off the queue.",
@@ -131,5 +169,236 @@
     "title": "Have Calls Your Team Shouldn't Be Handling?",
     "description": "Show us what currently lands on your team's desk. We can identify which customer operations make sense to move to Cinpc.",
     "button": "Get a Quote"
+  },
+  "ServicesHero": {
+    "title": "Customer Operations You Can Move Off Your Team",
+    "description": "Cinpc handles recurring customer and operational work for businesses across the financial sector.",
+    "button": "Discuss Your Needs"
+  },
+  "ServicesTeam": {
+    "title": "Financial BPO Services"
+  },
+  "ServicesCustomerJourney": {
+    "title": "One Customer Journey, Fewer Handoffs",
+    "description": "A customer may start with a simple question and end up needing verification, a follow-up, or another team. Cinpc can connect several support functions within one outsourced setup instead of treating every conversation as a separate task."
+  },
+  "ServicesDecide": {
+    "title": "Decide What Stays. Move What Doesn't.",
+    "description": "You don't have to outsource the whole customer operation.",
+    "keepDecisions": "Keep critical decisions in-house",
+    "moveCommunication": "Move recurring communication to Cinpc",
+    "defineEscalation": "Define when cases are escalated",
+    "adjustScope": "Adjust the scope as needs change"
+  },
+  "ServicesBuiltAround": {
+    "title": "Built Around Your Workflow",
+    "description": "Your processes come first. Cinpc works around defined responsibilities, communication requirements, and handoff points rather than forcing customer operations into a fixed service package.",
+    "button": "See Our Process"
+  },
+  "ServicesHaveMore": {
+    "title": "Have More Than One Function to Cover?",
+    "description": "Tell us where customer communication is creating extra work, and we'll help define what can move to Cinpc.",
+    "button": "Get a Quote"
+  },
+  "SolutionsHero": {
+    "title": "Support Built Around Financial Customer Journeys",
+    "description": "Different financial businesses create different customer conversations. Cinpc adapts outsourced support around the operation behind them.",
+    "button": "Discuss Your Needs"
+  },
+  "SolutionsBuiltFor": {
+    "title": "Solutions Across Financial Services",
+    "fintech": {
+      "title": "FinTech",
+      "description": "Support customers using digital financial products with everyday questions, account-related requests, verification, and follow-ups."
+    },
+    "lending": {
+      "title": "Lending",
+      "description": "Keep borrower communication moving across applications, payment reminders, questions, and ongoing customer contact."
+    },
+    "insurance": {
+      "title": "Insurance",
+      "description": "Handle customer inquiries, requests, follow-ups, and other recurring communication throughout the customer relationship."
+    },
+    "financialServices": {
+      "title": "Financial Services",
+      "description": "Add external capacity to established customer operations without building another support function in-house."
+    }
+  },
+  "SolutionsDifferentBusiness": {
+    "title": "Different Business. Different Queue.",
+    "description": "The work that creates pressure in a lending company may look completely different from the workload of a FinTech platform. Cinpc lets you define the functions, conversations, and handoffs that belong in your outsourced setup."
+  },
+  "SolutionsFits": {
+    "title": "Where Cinpc Fits In",
+    "description": "Customer operations rarely stay inside one neat category. Support can be built around different points in the customer journey:",
+    "button": "Explore Services",
+    "inquiries": "New customer inquiries",
+    "payments": "Payment and collection follow-ups",
+    "applications": "Applications and verification",
+    "complaints": "Complaints and escalations",
+    "customerCare": "Everyday customer care",
+    "communication": "Ongoing customer communication"
+  },
+  "SolutionsKeepCore": {
+    "title": "Keep the Core.",
+    "titleSecond": "Extend the Capacity.",
+    "description": "Your internal team can stay responsible for the decisions and functions that need to remain in-house while Cinpc covers the recurring communication around them."
+  },
+  "SolutionsNeedSetup": {
+    "title": "Need a Setup That Fits Your Business?",
+    "description": "Tell us what your customers contact you about and where your internal team needs more capacity.",
+    "button": "Get a Quote"
+  },
+  "ProcessHero": {
+    "title": "From Your Queue to Ours",
+    "description": "A clear setup keeps outsourcing simple. We define the work, prepare the workflow, launch the service, and adjust it as your operation changes.",
+    "button": "Start a Conversation"
+  },
+  "ProcessGetStarted": {
+    "title": "How We Get Started",
+    "map": {
+      "title": "Map",
+      "description": "We identify the calls, customer conversations, and recurring tasks you want to move outside your internal team."
+    },
+    "setUp": {
+      "title": "Set Up",
+      "description": "Together, we define responsibilities, workflows, communication requirements, and handoff points."
+    },
+    "goLive": {
+      "title": "Go Live",
+      "description": "Cinpc begins handling the agreed operations within the setup established for your business."
+    },
+    "adjust": {
+      "title": "Adjust",
+      "description": "As volumes, priorities, or requirements change, the scope and workflows can change with them."
+    }
+  },
+  "ProcessClearLines": {
+    "title": "Clear Lines from the Start",
+    "description": "Before launch, both teams know where responsibilities sit.",
+    "afterList": "This keeps the outsourced operation connected to your internal team without blurring responsibilities.",
+    "handles": "What Cinpc handles",
+    "staysInHouse": "What stays in-house",
+    "handedBack": "When a case is handed back",
+    "situations": "How different situations should be handled"
+  },
+  "ProcessYourWorkflow": {
+    "title": "Your Workflow Doesn't Disappear",
+    "description": "Outsourcing doesn't mean rebuilding customer operations around someone else's system. Cinpc works within the processes and requirements defined for the functions you move outside.",
+    "button": "Explore Services"
+  },
+  "ProcessBuilt": {
+    "title": "Built to Change with the Queue",
+    "description": "Call volumes and customer needs don't always stay predictable. The setup can be reviewed and adjusted when your operation needs different capacity or coverage."
+  },
+  "ProcessReady": {
+    "title": "Ready to Map What Moves?",
+    "description": "Show us what is currently taking up your team's time, and we'll start by defining what Cinpc can take over.",
+    "button": "Explore Services"
+  },
+  "CompanyHero": {
+    "title": "Built to Take Customer Operations Off Your Plate",
+    "description": "Cinpc is a call center outsourcing partner for financial businesses that need more capacity without adding another internal function.",
+    "button": "Discuss Your Needs"
+  },
+  "CompanyAbout": {
+    "title": "About Cinpc",
+    "description": "Cinpc is operated by CALL CENTER INP and provides outsourced customer and operational support across the financial sector.",
+    "descriptionSecond": "We work as an extension of internal teams, taking responsibility for defined customer conversations, follow-ups, and recurring support tasks."
+  },
+  "CompanyCloseEnough": {
+    "title": "Close Enough to Work as One Team",
+    "description": "Good outsourcing should make responsibilities clearer, not create another layer to manage.",
+    "processes": {
+      "title": "Your Processes",
+      "description": "We work around the workflows and requirements defined for your operation."
+    },
+    "responsibilities": {
+      "title": "Clear Responsibilities",
+      "description": "Both teams know what Cinpc handles, what stays in-house, and when a handoff is needed."
+    },
+    "adapt": {
+      "title": "Room to Adapt",
+      "description": "The setup can change as customer volumes, priorities, and operational needs change."
+    }
+  },
+  "CompanyFocused": {
+    "title": "Focused on Financial Customer Operations",
+    "description": "FinTech, lending, insurance, and other financial businesses deal with customer conversations that often require timely follow-up and clear handling. That is the environment Cinpc is built to support.",
+    "button": "Explore Solutions"
+  },
+  "CompanyPeopleBehind": {
+    "title": "People Behind the Queue",
+    "description": "Customer operations still come down to conversations: understanding the request, following the right process, and knowing what needs to happen next. Cinpc puts a dedicated external team behind that work."
+  },
+  "CompanyLetsTalk": {
+    "title": "Let's Talk About Your Operation",
+    "description": "Tell us what is currently handled in-house and where you need additional support.",
+    "button": "Get a Quote"
+  },
+  "ContactHero": {
+    "title": "Tell Us What Needs to Leave Your Queue",
+    "description": "Give us the basics, and we'll start from there."
+  },
+  "ContactStartConversation": {
+    "title": "Start the Conversation",
+    "description": "Give us the basics, and we'll start from there.",
+    "fullName": "Full Name*",
+    "fullNamePlaceholder": "Enter your full name",
+    "fullNameError": "Enter your full name",
+    "companyName": "Company Name*",
+    "companyNamePlaceholder": "Enter company name",
+    "companyNameError": "Enter company name",
+    "businessEmail": "Business Email*",
+    "businessEmailPlaceholder": "Enter your email",
+    "businessEmailError": "Enter your email",
+    "phoneNumber": "Phone Number",
+    "phoneNumberPlaceholder": "Enter phone number",
+    "phoneNumberError": "Enter phone number",
+    "helpWith": "What Do You Need Help With?*",
+    "helpWithError": "Select what you need help with",
+    "helpWithOptions": {
+      "customerCare": "Customer Care",
+      "outboundCalls": "Outbound Calls",
+      "salesSupport": "Sales Support",
+      "businessSupport": "Business Support",
+      "multipleServices": "Multiple Services",
+      "other": "Other"
+    },
+    "callVolume": "Estimated Call Volume",
+    "callVolumeOptions": {
+      "under1000": "Under 1,000 per month",
+      "from1000": "1,000–5,000 per month",
+      "from5000": "5,000–20,000 per month",
+      "from20000": "20,000+ per month",
+      "notSure": "Not sure yet"
+    },
+    "tellUsMore": "Tell Us More",
+    "tellUsMorePlaceholder": "Briefly describe what you need covered",
+    "privacy": "I agree to the processing of my personal data in accordance with the <policy>Privacy Policy</policy>.*",
+    "privacyError": "Agree to the Privacy Policy",
+    "submit": "Send Request",
+    "directTitle": "Prefer to Contact Us Directly?",
+    "directDescription": "No form required. Reach the Cinpc team using the contact details below."
+  },
+  "ContactWhatHappens": {
+    "title": "What Happens After You Contact Us?",
+    "review": {
+      "title": "We Review",
+      "description": "We look at what you need covered and the type of customer communication involved."
+    },
+    "talk": {
+      "title": "We Talk",
+      "description": "Our team contacts you to clarify volumes, workflows, priorities, and requirements."
+    },
+    "scope": {
+      "title": "We Scope It",
+      "description": "We outline a call center setup that matches the work you want to outsource."
+    }
+  },
+  "ContactNotSure": {
+    "title": "Not Sure What to Outsource Yet?",
+    "description": "You don't need a finished plan before contacting us. Tell us where customer communication is taking up too much time, and we'll help define what can move outside your internal team.",
+    "button": "Explore Services"
   }
 }

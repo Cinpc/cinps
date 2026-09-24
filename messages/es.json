@@ -24,6 +24,44 @@
     "cookie-policy": "Política de Cookies",
     "refund-policy": "Política de Reembolso"
   },
+  "TermsHero": {
+    "title": "Términos y Condiciones"
+  },
+  "PrivacyHero": {
+    "title": "Política de Privacidad"
+  },
+  "CookieHero": {
+    "title": "Política de Cookies"
+  },
+  "RefundHero": {
+    "title": "Política de Reembolso"
+  },
+  "Meta": {
+    "home": {
+      "title": "Servicios de externalización de call center | Cinpc",
+      "description": "Externaliza la atención al cliente y las operaciones BPO financieras con Cinpc. Obtén soporte flexible de call center adaptado a los flujos de trabajo de tu empresa."
+    },
+    "services": {
+      "title": "Servicios de externalización de call center financiero | Cinpc",
+      "description": "Explora los servicios BPO financieros de Cinpc, incluidos atención al cliente, cobros, cumplimiento normativo, solicitudes, fraude y reclamaciones."
+    },
+    "solutions": {
+      "title": "Soluciones de call center para servicios financieros | Cinpc",
+      "description": "Explora las soluciones externalizadas de call center de Cinpc para empresas FinTech, de préstamos, seguros y servicios financieros."
+    },
+    "process": {
+      "title": "Proceso de externalización de call center | Cinpc",
+      "description": "Descubre cómo Cinpc configura operaciones externalizadas de call center, desde la definición de flujos de trabajo y responsabilidades hasta el lanzamiento y los ajustes continuos."
+    },
+    "company": {
+      "title": "Empresa de externalización de call center financiero | Cinpc",
+      "description": "Conoce Cinpc, una empresa de externalización de call center que ofrece atención al cliente y soporte operativo a empresas del sector financiero."
+    },
+    "contact": {
+      "title": "Contacta con Cinpc | Servicios de externalización de call center",
+      "description": "Contacta con Cinpc para hablar sobre tus necesidades de externalización de call center, operaciones de atención al cliente, flujos de trabajo, volúmenes previstos y soporte necesario."
+    }
+  },
   "HomeHero": {
     "title": "Dale un destino a cada llamada",
     "description": "Cuando las llamadas de los clientes empiezan a competir con el trabajo para el que realmente contrataste a tu equipo, Cinpc las saca de la cola.",
@@ -131,5 +169,236 @@
     "title": "¿Tu equipo atiende llamadas que no debería gestionar?",
     "description": "Muéstranos qué tareas llegan actualmente a tu equipo. Podemos identificar qué operaciones de atención al cliente tiene sentido trasladar a Cinpc.",
     "button": "Solicitar presupuesto"
+  },
+  "ServicesHero": {
+    "title": "Operaciones de clientes que puedes externalizar",
+    "description": "Cinpc gestiona tareas recurrentes de atención al cliente y operaciones para empresas de todo el sector financiero.",
+    "button": "Hablemos de tus necesidades"
+  },
+  "ServicesTeam": {
+    "title": "Servicios BPO financieros"
+  },
+  "ServicesCustomerJourney": {
+    "title": "Un solo recorrido del cliente, menos transferencias",
+    "description": "Un cliente puede empezar con una consulta sencilla y terminar necesitando una verificación, un seguimiento o la intervención de otro equipo. Cinpc conecta varias funciones de soporte dentro de una única operación externalizada, en lugar de tratar cada conversación como una tarea independiente."
+  },
+  "ServicesDecide": {
+    "title": "Decide qué se queda y qué se externaliza",
+    "description": "No tienes que externalizar toda la operación de atención al cliente.",
+    "keepDecisions": "Mantén las decisiones críticas dentro de tu empresa",
+    "moveCommunication": "Traslada la comunicación recurrente a Cinpc",
+    "defineEscalation": "Define cuándo deben escalarse los casos",
+    "adjustScope": "Ajusta el alcance a medida que cambien las necesidades"
+  },
+  "ServicesBuiltAround": {
+    "title": "Adaptado a tu flujo de trabajo",
+    "description": "Tus procesos son lo primero. Cinpc trabaja en torno a responsabilidades definidas, requisitos de comunicación y puntos de transferencia, en lugar de adaptar tus operaciones de atención al cliente a un paquete de servicios fijo.",
+    "button": "Ver nuestro proceso"
+  },
+  "ServicesHaveMore": {
+    "title": "¿Necesitas cubrir más de una función?",
+    "description": "Cuéntanos dónde la comunicación con los clientes está generando trabajo adicional y te ayudaremos a definir qué funciones pueden trasladarse a Cinpc.",
+    "button": "Solicitar presupuesto"
+  },
+  "SolutionsHero": {
+    "title": "Soporte adaptado al recorrido del cliente financiero",
+    "description": "Cada negocio financiero genera diferentes tipos de conversaciones con sus clientes. Cinpc adapta el soporte externalizado a las operaciones que hay detrás de ellas.",
+    "button": "Hablemos de tus necesidades"
+  },
+  "SolutionsBuiltFor": {
+    "title": "Soluciones para el sector financiero",
+    "fintech": {
+      "title": "FinTech",
+      "description": "Atiende a los clientes de productos financieros digitales con consultas habituales, solicitudes relacionadas con sus cuentas, verificaciones y seguimientos."
+    },
+    "lending": {
+      "title": "Préstamos",
+      "description": "Mantén activa la comunicación con los prestatarios durante las solicitudes, los recordatorios de pago, las consultas y el contacto continuo con los clientes."
+    },
+    "insurance": {
+      "title": "Seguros",
+      "description": "Gestiona las consultas, solicitudes, seguimientos y otras comunicaciones recurrentes a lo largo de la relación con el cliente."
+    },
+    "financialServices": {
+      "title": "Servicios financieros",
+      "description": "Añade capacidad externa a tus operaciones de atención al cliente existentes sin crear una nueva función de soporte interna."
+    }
+  },
+  "SolutionsDifferentBusiness": {
+    "title": "Cada negocio tiene una cola diferente",
+    "description": "El trabajo que genera presión en una empresa de préstamos puede ser muy distinto de la carga de trabajo de una plataforma FinTech. Cinpc te permite definir las funciones, las conversaciones y los puntos de transferencia que formarán parte de tu operación externalizada."
+  },
+  "SolutionsFits": {
+    "title": "Dónde encaja Cinpc",
+    "description": "Las operaciones de atención al cliente rara vez encajan en una sola categoría. El soporte puede organizarse en torno a diferentes etapas del recorrido del cliente:",
+    "button": "Explorar servicios",
+    "inquiries": "Consultas de nuevos clientes",
+    "payments": "Solicitudes y verificaciones",
+    "applications": "Atención al cliente diaria",
+    "complaints": "Seguimientos de pagos y cobros",
+    "customerCare": "Reclamaciones y escalaciones",
+    "communication": "Comunicación continua con los clientes"
+  },
+  "SolutionsKeepCore": {
+    "title": "Mantén lo esencial.",
+    "titleSecond": "Amplía la capacidad.",
+    "description": "Tu equipo interno puede seguir siendo responsable de las decisiones y funciones que deben permanecer dentro de la empresa, mientras Cinpc se encarga de la comunicación recurrente relacionada con ellas."
+  },
+  "SolutionsNeedSetup": {
+    "title": "¿Necesitas una solución que se adapte a tu negocio?",
+    "description": "Cuéntanos por qué motivos contactan tus clientes y en qué áreas tu equipo interno necesita más capacidad.",
+    "button": "Solicitar presupuesto"
+  },
+  "ProcessHero": {
+    "title": "De tu cola a la nuestra",
+    "description": "Una configuración clara simplifica la externalización. Definimos el trabajo, preparamos el flujo de trabajo, ponemos en marcha el servicio y lo ajustamos a medida que cambian tus operaciones.",
+    "button": "Iniciar una conversación"
+  },
+  "ProcessGetStarted": {
+    "title": "Cómo empezamos",
+    "map": {
+      "title": "Definir",
+      "description": "Identificamos las llamadas, las conversaciones con los clientes y las tareas recurrentes que quieres trasladar fuera de tu equipo interno."
+    },
+    "setUp": {
+      "title": "Preparar",
+      "description": "Juntos definimos las responsabilidades, los flujos de trabajo, los requisitos de comunicación y los puntos de transferencia."
+    },
+    "goLive": {
+      "title": "Poner en marcha",
+      "description": "Cinpc comienza a gestionar las operaciones acordadas según la configuración establecida para tu empresa."
+    },
+    "adjust": {
+      "title": "Ajustar",
+      "description": "A medida que cambian los volúmenes, las prioridades o los requisitos, también pueden ajustarse el alcance y los flujos de trabajo."
+    }
+  },
+  "ProcessClearLines": {
+    "title": "Responsabilidades claras desde el principio",
+    "description": "Antes del lanzamiento, ambos equipos saben exactamente quién se encarga de cada responsabilidad.",
+    "afterList": "Así, la operación externalizada permanece conectada con tu equipo interno sin que se confundan las responsabilidades.",
+    "handles": "Qué gestiona Cinpc",
+    "staysInHouse": "Qué permanece dentro de tu empresa",
+    "handedBack": "Cuándo se devuelve un caso a tu equipo",
+    "situations": "Cómo deben gestionarse las distintas situaciones"
+  },
+  "ProcessYourWorkflow": {
+    "title": "Tu flujo de trabajo no desaparece",
+    "description": "Externalizar no significa reconstruir tus operaciones de atención al cliente en torno al sistema de otra empresa. Cinpc trabaja dentro de los procesos y requisitos definidos para las funciones que decides externalizar.",
+    "button": "Explorar servicios"
+  },
+  "ProcessBuilt": {
+    "title": "Adaptado a los cambios en la cola",
+    "description": "El volumen de llamadas y las necesidades de los clientes no siempre son predecibles. La configuración puede revisarse y ajustarse cuando tus operaciones necesiten una capacidad o cobertura diferente."
+  },
+  "ProcessReady": {
+    "title": "¿Listo para definir qué puedes externalizar?",
+    "description": "Muéstranos qué está ocupando actualmente el tiempo de tu equipo y empezaremos por definir qué puede asumir Cinpc.",
+    "button": "Hablemos de tus necesidades"
+  },
+  "CompanyHero": {
+    "title": "Diseñado para liberar a tu equipo de las operaciones de atención al cliente",
+    "description": "Cinpc es un socio de externalización de call center para empresas financieras que necesitan más capacidad sin añadir otra función interna.",
+    "button": "Hablemos de tus necesidades"
+  },
+  "CompanyAbout": {
+    "title": "Sobre Cinpc",
+    "description": "Cinpc está gestionada por CALL CENTER INP y ofrece soporte externalizado de atención al cliente y operaciones para empresas del sector financiero.",
+    "descriptionSecond": "Trabajamos como una extensión de los equipos internos, asumiendo la responsabilidad de determinadas conversaciones con los clientes, seguimientos y tareas recurrentes de soporte."
+  },
+  "CompanyCloseEnough": {
+    "title": "Lo bastante cerca para trabajar como un solo equipo",
+    "description": "Una buena externalización debe aclarar las responsabilidades, no crear otra capa que gestionar.",
+    "processes": {
+      "title": "Tus procesos",
+      "description": "Trabajamos en torno a los flujos de trabajo y requisitos definidos para tus operaciones."
+    },
+    "responsibilities": {
+      "title": "Responsabilidades claras",
+      "description": "Ambos equipos saben qué gestiona Cinpc, qué permanece dentro de tu empresa y cuándo es necesaria una transferencia."
+    },
+    "adapt": {
+      "title": "Capacidad para adaptarse",
+      "description": "La configuración puede cambiar a medida que evolucionan el volumen de clientes, las prioridades y las necesidades operativas."
+    }
+  },
+  "CompanyFocused": {
+    "title": "Enfocados en las operaciones de atención al cliente del sector financiero",
+    "description": "Las empresas FinTech, de préstamos, seguros y otros servicios financieros gestionan conversaciones con clientes que suelen requerir un seguimiento oportuno y una atención clara. Cinpc está diseñado para ofrecer soporte precisamente en este entorno.",
+    "button": "Explorar soluciones"
+  },
+  "CompanyPeopleBehind": {
+    "title": "Personas detrás de la cola",
+    "description": "CLas operaciones de atención al cliente siguen dependiendo de las conversaciones: entender la solicitud, seguir el proceso adecuado y saber qué debe ocurrir a continuación. Cinpc pone un equipo externo dedicado detrás de ese trabajo."
+  },
+  "CompanyLetsTalk": {
+    "title": "Hablemos de tus operaciones",
+    "description": "Cuéntanos qué gestiona actualmente tu equipo interno y dónde necesitas soporte adicional.",
+    "button": "Solicitar presupuesto"
+  },
+  "ContactHero": {
+    "title": "Cuéntanos qué necesitas sacar de tu cola",
+    "description": "Danos la información básica y empezaremos desde ahí."
+  },
+  "ContactStartConversation": {
+    "title": "Inicia la conversación",
+    "description": "Danos la información básica y empezaremos desde ahí.",
+    "fullName": "Nombre completo*",
+    "fullNamePlaceholder": "Introduce tu nombre completo",
+    "fullNameError": "Introduce tu nombre completo",
+    "companyName": "Nombre de la empresa*",
+    "companyNamePlaceholder": "Introduce el nombre de la empresa",
+    "companyNameError": "Introduce el nombre de la empresa",
+    "businessEmail": "Correo electrónico corporativo*",
+    "businessEmailPlaceholder": "[Introduce tu correo electrónico",
+    "businessEmailError": "[Introduce tu correo electrónico",
+    "phoneNumber": "Número de teléfono",
+    "phoneNumberPlaceholder": "Introduce tu número de teléfono",
+    "phoneNumberError": "Introduce tu número de teléfono",
+    "helpWith": "¿En qué necesitas ayuda?*",
+    "helpWithError": "Selecciona en qué necesitas ayuda",
+    "helpWithOptions": {
+      "customerCare": "Atención al cliente",
+      "outboundCalls": "Llamadas salientes",
+      "salesSupport": "Soporte de ventas",
+      "businessSupport": "Soporte empresarial",
+      "multipleServices": "Varios servicios",
+      "other": "Otro"
+    },
+    "callVolume": "Volumen estimado de llamadas",
+    "callVolumeOptions": {
+      "under1000": "Menos de 1.000 al mes",
+      "from1000": "1.000–5.000 al mes",
+      "from5000": "5.000–20.000 al mes",
+      "from20000": "Más de 20.000 al mes",
+      "notSure": "Aún no lo sé"
+    },
+    "tellUsMore": "Cuéntanos más",
+    "tellUsMorePlaceholder": "Describe brevemente qué necesitas cubrir",
+    "privacy": "Acepto el tratamiento de mis datos personales de acuerdo con la <policy>Política de Privacidad</policy>.*",
+    "privacyError": "Aceptar la Política de privacidad",
+    "submit": "Enviar solicitud",
+    "directTitle": "¿Prefieres contactarnos directamente?",
+    "directDescription": "No necesitas rellenar ningún formulario. Ponte en contacto con el equipo de Cinpc utilizando los datos que aparecen a continuación."
+  },
+  "ContactWhatHappens": {
+    "title": "¿Qué ocurre después de contactarnos?",
+    "review": {
+      "title": "Revisamos",
+      "description": "Analizamos qué necesitas cubrir y qué tipo de comunicación con los clientes implica."
+    },
+    "talk": {
+      "title": "Hablamos",
+      "description": "Nuestro equipo se pone en contacto contigo para aclarar los volúmenes, los flujos de trabajo, las prioridades y los requisitos."
+    },
+    "scope": {
+      "title": "Definimos el alcance",
+      "description": "Definimos una estructura de call center adaptada al trabajo que quieres externalizar."
+    }
+  },
+  "ContactNotSure": {
+    "title": "¿Aún no sabes qué externalizar?",
+    "description": "No necesitas tener un plan definitivo antes de contactarnos. Cuéntanos dónde la comunicación con los clientes está ocupando demasiado tiempo y te ayudaremos a definir qué puede trasladarse fuera de tu equipo interno.",
+    "button": "Explorar servicios"
   }
 }

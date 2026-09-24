@@ -1,5 +1,5 @@
-import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
+import { getPageMetadata } from '@/i18n/metadata';
 import HomeHero from '@/app/[locale]/(home)/HomeHero';
 import HomeCallCenter from '@/app/[locale]/(home)/HomeCallCenter';
 import HomeOneTeam from '@/app/[locale]/(home)/HomeOneTeam';
@@ -8,12 +8,11 @@ import HomeVoiceCustomers from '@/app/[locale]/(home)/HomeVoiceCustomers';
 import HomeHaveCalls from '@/app/[locale]/(home)/HomeHaveCalls';
 import HomeClearProcess from '@/app/[locale]/(home)/HomeClearProcess';
 import HomeBuiltFor from '@/app/[locale]/(home)/HomeBuiltFor';
+import { contactFormHref } from '@/data/contact';
 
-export const metadata: Metadata = {
-  title: 'Call Center Outsourcing Services | Cinpc',
-  description:
-    'Outsource customer support and financial BPO operations with Cinpc. Get flexible call center support built around your business workflows.',
-};
+export function generateMetadata() {
+  return getPageMetadata('home');
+}
 
 const teamItems = [
   { key: 'compliance', icon: '/icons/lifebuoy.svg' },
@@ -37,7 +36,7 @@ export default async function Home() {
         imageSrc="/home/home-hero.png"
         imageSrcMobile="/home/home-hero-mobile.png"
         buttonText={tHero('button')}
-        buttonHref="/contact"
+        buttonHref={contactFormHref}
         contentClassName="min-h-188 max-md:min-h-220.5"
         cardClassName="max-md:bottom-3"
       />

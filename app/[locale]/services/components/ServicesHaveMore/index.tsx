@@ -1,10 +1,14 @@
+import { getTranslations } from 'next-intl/server';
 import Title from '@/components/Title';
 import Description from '@/components/Description';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Link } from '@/i18n/navigation';
+import { contactFormHref } from '@/data/contact';
 
-export default function HomeHaveMore() {
+export default async function HomeHaveMore() {
+  const t = await getTranslations('ServicesHaveMore');
+
   return (
     <section className="lg:py-16 py-4 px-2 bg-light-gray max-md:mx-2 max-md:rounded-3xl">
       <div className="container">
@@ -24,14 +28,15 @@ export default function HomeHaveMore() {
               variant="purple"
               className="mb-4 leading-[1.4] max-lg:leading-[142.857%]"
             >
-              Have More Than One Function to Cover?
+              {t('title')}
             </Title>
             <Description className="mb-8 leading-[1.529]" size="17">
-              Tell us where customer communication is creating extra work, and
-              we&apos;ll help define what can move to Cinpc.
+              {t('description')}
             </Description>
 
-            <Button render={<Link href="/contact" />}>Get a Quote</Button>
+            <Button render={<Link href={contactFormHref} />}>
+              {t('button')}
+            </Button>
           </div>
         </div>
       </div>

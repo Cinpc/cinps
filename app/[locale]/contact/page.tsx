@@ -1,21 +1,22 @@
-import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
+import { getPageMetadata } from '@/i18n/metadata';
 import HomeHero from '@/app/[locale]/(home)/HomeHero';
 import ContactStartConversation from '@/app/[locale]/contact/components/ContactStartConversation';
 import ContactWhatHappens from '@/app/[locale]/contact/components/ContactWhatHappens';
 import ContactNotSure from '@/app/[locale]/contact/components/ContactNotSure';
 
-export const metadata: Metadata = {
-  title: 'Contact Cinpc | Call Center Outsourcing Services',
-  description:
-    'Contact Cinpc to discuss your call center outsourcing needs, customer operations, workflows, expected volumes, and required support.',
-};
+export function generateMetadata() {
+  return getPageMetadata('contact');
+}
 
-export default function ContactPage() {
+export default async function ContactPage() {
+  const t = await getTranslations('ContactHero');
+
   return (
     <>
       <HomeHero
-        title="Tell Us What Needs to Leave Your Queue"
-        description="Give us the basics, and we’ll start from there."
+        title={t('title')}
+        description={t('description')}
         imageSrc="/contact/hero.png"
         imageSrcMobile="/contact/hero-mobile.png"
         contentClassName="max-md:min-h-172.5"

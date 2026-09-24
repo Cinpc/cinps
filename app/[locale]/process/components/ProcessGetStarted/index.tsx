@@ -1,46 +1,29 @@
+import { getTranslations } from 'next-intl/server';
 import Title from '@/components/Title';
 import Description from '@/components/Description';
 import Image from 'next/image';
 
 const items = [
-  {
-    icon: '/icons/map.svg',
-    title: 'Map',
-    description:
-      'We identify which conversations and tasks need to leave your internal queue.',
-  },
-  {
-    icon: '/icons/projector-screen-chart.svg',
-    title: 'Set Up',
-    description:
-      'Workflows, requirements, and team responsibilities are prepared before launch.',
-  },
-  {
-    icon: '/icons/toggle-right.svg',
-    title: 'Go Live',
-    description:
-      'The Cinpc team starts handling the agreed customer operations.',
-  },
-  {
-    icon: '/icons/sliders.svg',
-    title: 'Adjust',
-    description:
-      'Capacity and workflows change when volumes, priorities, or requirements do.',
-  },
-];
+  { key: 'map', icon: '/icons/map.svg' },
+  { key: 'setUp', icon: '/icons/projector-screen-chart.svg' },
+  { key: 'goLive', icon: '/icons/toggle-right.svg' },
+  { key: 'adjust', icon: '/icons/sliders.svg' },
+] as const;
 
-export default function ProcessGetStarted() {
+export default async function ProcessGetStarted() {
+  const t = await getTranslations('ProcessGetStarted');
+
   return (
     <section className="pt-16 lg:pb-16">
       <div className="container">
         <Title variant="purple" className="tracking-[-0.171px] mb-6">
-          How We Get Started
+          {t('title')}
         </Title>
 
         <div className="space-y-2.5">
           {items.map((item) => (
             <div
-              key={item.title}
+              key={item.key}
               className="grid items-start justify-center gap-6 grid-cols-[58px_24px_1fr] md:grid-cols-[269px_58px_269px] md:even:[&>:last-child]:order-first md:even:[&>:first-child]:order-last last:[&>:nth-child(2)>img:last-child]:hidden last:[&>:nth-child(2)>img:first-child]:mb-0"
             >
               <div></div>
@@ -64,12 +47,12 @@ export default function ProcessGetStarted() {
                 <div className="flex items-center gap-1.5 mb-1 md:py-2">
                   <Image src={item.icon} width={24} height={24} alt="" />
                   <Title as="h3" className="font-normal leading-[1]">
-                    {item.title}
+                    {t(`${item.key}.title`)}
                   </Title>
                 </div>
                 <div className="col-span-full">
                   <Description className="max-w-67.5 text-base tracking-[-0.432px] font-satoshi leading-[1.25]">
-                    {item.description}
+                    {t(`${item.key}.description`)}
                   </Description>
                 </div>
               </div>

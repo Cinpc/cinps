@@ -1,10 +1,14 @@
+import { getTranslations } from 'next-intl/server';
 import Title from '@/components/Title';
 import Description from '@/components/Description';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Link } from '@/i18n/navigation';
+import { contactFormHref } from '@/data/contact';
 
-export default function CompanyLetsTalk() {
+export default async function CompanyLetsTalk() {
+  const t = await getTranslations('CompanyLetsTalk');
+
   return (
     <section className="max-lg:py-4 px-2 lg:py-16 bg-light-gray max-md:mx-2 max-md:rounded-3xl">
       <div className="container">
@@ -29,14 +33,15 @@ export default function CompanyLetsTalk() {
 
           <div>
             <Title variant="purple" className="mb-4">
-              Let&apos;s Talk About Your Operation
+              {t('title')}
             </Title>
             <Description className="mb-8" size="17">
-              Tell us what is currently handled in-house and where you need
-              additional support.
+              {t('description')}
             </Description>
 
-            <Button render={<Link href="/contact" />}>Get a Quote</Button>
+            <Button render={<Link href={contactFormHref} />}>
+              {t('button')}
+            </Button>
           </div>
         </div>
       </div>

@@ -1,17 +1,16 @@
+import { getTranslations } from 'next-intl/server';
 import Title from '@/components/Title';
 import Description from '@/components/Description';
 
-export default function CompanyPeopleBehind() {
+export default async function CompanyPeopleBehind() {
+  const t = await getTranslations('CompanyPeopleBehind');
+
   return (
     <section className="py-16">
       <div className="container">
         <div className="grid lg:grid-cols-[1fr_0.72486fr] gap-4 items-start">
-          <Title variant="purple">People Behind the Queue</Title>
-          <Description size="17">
-            Customer operations still come down to conversations: understanding
-            the request, following the right process, and knowing what needs to
-            happen next. Cinpc puts a dedicated external team behind that work.
-          </Description>
+          <Title variant="purple">{t('title')}</Title>
+          <Description size="17">{t('description')}</Description>
         </div>
       </div>
     </section>

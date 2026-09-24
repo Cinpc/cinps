@@ -1,29 +1,31 @@
-import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
+import { getPageMetadata } from '@/i18n/metadata';
 import HomeHero from '@/app/[locale]/(home)/HomeHero';
 import SolutionsBuiltFor from '@/app/[locale]/solutions/components/SolutionsBuiltFor';
 import SolutionsDifferentBusiness from '@/app/[locale]/solutions/components/SolutionsDifferentBusiness';
 import SolutionsFits from '@/app/[locale]/solutions/components/SolutionsFits';
 import SolutionsKeepCore from '@/app/[locale]/solutions/components/SolutionsKeepCore';
 import SolutionsNeedSetup from '@/app/[locale]/solutions/components/SolutionsNeedSetup';
+import { contactFormHref } from '@/data/contact';
 
-export const metadata: Metadata = {
-  title: 'Call Center Solutions for Financial Services | Cinpc',
-  description:
-    'Explore outsourced call center solutions for FinTech, lending, insurance, and financial services businesses with Cinpc.',
-};
+export function generateMetadata() {
+  return getPageMetadata('solutions');
+}
 
-export default function SolutionsPage() {
+export default async function SolutionsPage() {
+  const t = await getTranslations('SolutionsHero');
+
   return (
     <>
       <HomeHero
-        title="Support Built Around Financial Customer Journeys"
-        description="Different financial businesses create different customer conversations. Cinpc adapts outsourced support around the operation behind them."
+        title={t('title')}
+        description={t('description')}
         imageSrc="/solutions/hero.png"
         imageSrcMobile="/solutions/hero-mobile.png"
-        buttonText="Discuss Your Needs"
-        buttonHref="/contact"
+        buttonText={t('button')}
+        buttonHref={contactFormHref}
         contentClassName="max-md:min-h-140.5"
-        cardClassName="max-w-181"
+        cardClassName="max-w-185"
       />
       <SolutionsBuiltFor />
       <SolutionsDifferentBusiness />

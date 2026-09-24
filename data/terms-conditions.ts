@@ -1,4 +1,4 @@
-import { contact } from '@/data/contact';
+import { contact, contactFormHref } from '@/data/contact';
 
 export type PolicyLink = {
   href: string;
@@ -283,9 +283,280 @@ export const termsConditions: PolicySection[] = [
       ],
       [
         'Contact form: Available on the ',
-        { href: '/contact', label: 'Contact page' },
+        { href: contactFormHref, label: 'Contact page' },
         ' of the Cinpc website.',
       ],
     ],
   },
 ];
+
+export const termsConditionsEs: PolicySection[] = [
+  {
+    id: 'intro',
+    paragraphs: [
+      'Estos Términos y Condiciones regulan el acceso y el uso del sitio web de Cinpc en cinpc.com, así como de los servicios empresariales disponibles a través de este.',
+      `Cinpc es una marca operada por CALL CENTER INP, registrada en ${contact.address} con el número de registro [insertar número de registro].`,
+      'Al acceder al sitio web, enviar una consulta, solicitar un presupuesto o contratar los servicios de Cinpc, reconoces que has leído y comprendido estos Términos y Condiciones y aceptas quedar sujeto a las disposiciones aplicables al uso del sitio web y de los servicios.',
+    ],
+  },
+  {
+    id: 'about-cinpc',
+    title: '1. Acerca de Cinpc',
+    paragraphs: [
+      'Cinpc ofrece servicios de externalización de call center y externalización de procesos empresariales principalmente para empresas que operan en el sector financiero. Sus servicios pueden incluir atención al cliente, soporte al cliente relacionado con el cumplimiento normativo, soporte de cobros, comunicación con clientes relacionada con fraudes, soporte de solicitudes, gestión de reclamaciones, comunicación saliente, asistencia de ventas y otras operaciones de atención al cliente acordadas.',
+      'Cinpc actúa como proveedor de servicios externalizados, prestando soporte a procesos empresariales definidos y a las comunicaciones con los clientes. Salvo que se acuerde expresamente lo contrario por escrito, Cinpc no proporciona directamente productos o servicios bancarios, de préstamo, seguros, inversión, pagos u otros productos o servicios financieros regulados a los clientes de sus clientes.',
+    ],
+  },
+  {
+    id: 'business-use',
+    title: '2. Uso empresarial',
+    paragraphs: [
+      'Los servicios de Cinpc están destinados principalmente a empresas y organizaciones que buscan externalizar la comunicación con sus clientes y el soporte operativo.',
+      'Si contactas con Cinpc o celebras un acuerdo en nombre de una empresa u otra organización, confirmas que tienes autoridad para actuar en su nombre y, cuando corresponda, para vincular a dicha organización al acuerdo correspondiente.',
+    ],
+  },
+  {
+    id: 'website-use',
+    title: '3. Uso del sitio web',
+    paragraphs: [
+      'El sitio web de Cinpc proporciona información sobre los servicios disponibles, soluciones, procesos de trabajo y formas de contactar con el equipo de Cinpc. Puedes utilizar el sitio web para fines empresariales legítimos, incluidos consultar los servicios, enviar consultas y solicitar información o un presupuesto.',
+    ],
+    listIntro: 'No debes utilizar el sitio web:',
+    list: [
+      'Para ningún fin ilegal, fraudulento, engañoso o abusivo.',
+      'Para interferir con el funcionamiento, la seguridad o la disponibilidad del sitio web.',
+      'Para intentar obtener acceso no autorizado a sistemas, cuentas, redes o datos.',
+      'Para introducir malware, código malicioso, ataques automatizados u otros materiales perjudiciales.',
+      'Para recopilar o extraer contenido o datos del sitio web mediante medios automatizados no autorizados.',
+      'Para suplantar a otra persona u organización o proporcionar deliberadamente información falsa.',
+      'Para infringir derechos de propiedad intelectual, privacidad, confidencialidad u otros derechos pertenecientes a Cinpc o a terceros.',
+    ],
+    afterList: [
+      'Cinpc puede restringir o bloquear el acceso al sitio web cuando sea razonablemente necesario para proteger sus sistemas, usuarios, operaciones empresariales o derechos legales.',
+    ],
+  },
+  {
+    id: 'requests-and-contact-forms',
+    title: '4. Solicitudes y formularios de contacto',
+    paragraphs: [
+      'El sitio web permite a los clientes potenciales contactar con Cinpc y proporcionar información sobre sus necesidades de externalización. Esto puede incluir datos de contacto, información de la empresa, los servicios requeridos, el volumen estimado de llamadas e información adicional enviada mediante el formulario de contacto.',
+      'Enviar un formulario, contactar con Cinpc o solicitar un presupuesto no crea automáticamente un acuerdo de prestación de servicios ni obliga a Cinpc a aceptar un encargo. Cinpc puede revisar la solicitud, pedir información adicional, analizar los requisitos y determinar si el trabajo solicitado se encuentra dentro de sus capacidades y del alcance de sus servicios.',
+      'Eres responsable de garantizar que la información enviada a Cinpc sea exacta y que estés autorizado para proporcionarla.',
+    ],
+  },
+  {
+    id: 'quotes-and-service-proposals',
+    title: '5. Presupuestos y propuestas de servicios',
+    paragraphs: [
+      'Cualquier presupuesto, propuesta, alcance, estimación u otra información comercial proporcionada por Cinpc puede estar sujeta a términos, supuestos, limitaciones y períodos de validez adicionales comunicados junto con dicho documento.',
+      'Un presupuesto o una conversación preliminar no genera la obligación de prestar servicios salvo que las partes hayan completado el proceso de aceptación o contratación requerido.',
+      'Los precios pueden depender de factores como el alcance de los servicios, el volumen de llamadas, la cobertura requerida, el personal, los flujos de trabajo, la complejidad operativa, las integraciones, los idiomas, los requisitos de formación y otras condiciones específicas del proyecto.',
+    ],
+  },
+  {
+    id: 'service-agreements',
+    title: '6. Acuerdos de prestación de servicios',
+    paragraphs: [
+      'Los servicios exactos proporcionados a un cliente pueden estar regulados por un acuerdo de prestación de servicios independiente, una declaración de trabajo, un formulario de pedido, una propuesta u otro acuerdo escrito aceptado por las partes.',
+    ],
+    listIntro: 'Dicha documentación puede especificar aspectos como:',
+    list: [
+      'Los servicios y operaciones de atención al cliente incluidos en el encargo.',
+      'Las responsabilidades asignadas entre Cinpc y el cliente.',
+      'Los flujos de trabajo, procedimientos y puntos de escalamiento.',
+      'El personal, los horarios de funcionamiento, la capacidad o los requisitos de volumen.',
+      'Las tarifas, la facturación y las condiciones de pago.',
+      'Los requisitos de rendimiento o niveles de servicio, cuando corresponda.',
+      'Las obligaciones relativas a protección de datos, seguridad y confidencialidad.',
+      'Las condiciones de duración, renovación, suspensión y terminación.',
+    ],
+    afterList: [
+      'Si un acuerdo específico de prestación de servicios por escrito entra en conflicto con estos Términos y Condiciones en relación con la prestación de los servicios contratados, se aplicarán las disposiciones de dicho acuerdo específico en la medida en que exista tal conflicto.',
+    ],
+  },
+  {
+    id: 'client-responsibilities',
+    title: '7. Responsabilidades del cliente',
+    paragraphs: [
+      'La eficacia de las operaciones externalizadas de atención al cliente depende de instrucciones precisas y responsabilidades claramente definidas. Los clientes son responsables de proporcionar la información, los accesos, los procedimientos, los materiales, las aprobaciones y la cooperación razonablemente necesarios para que Cinpc pueda prestar los servicios acordados.',
+      'Dependiendo del encargo, el cliente también puede ser responsable de garantizar que sus instrucciones, productos, procesos de atención al cliente, guiones, políticas y uso de los servicios de Cinpc cumplan con las leyes y los requisitos normativos aplicables a su actividad.',
+      'Cinpc puede basarse en la información y las instrucciones proporcionadas por el cliente salvo que exista una razón razonable para considerar que son incorrectas, no autorizadas o ilegales.',
+    ],
+  },
+  {
+    id: 'financial-sector-support',
+    title: '8. Soporte para el sector financiero',
+    paragraphs: [
+      'Cinpc presta soporte a las operaciones de atención al cliente de empresas que incluyen compañías FinTech, prestamistas, aseguradoras y otras empresas de servicios financieros. Las referencias en el sitio web al cumplimiento normativo, cobros, fraude, solicitudes, verificación, reclamaciones o funciones similares describen categorías de soporte operativo y de comunicación externalizado.',
+      'Estas descripciones no constituyen asesoramiento financiero, legal, normativo, de inversión, seguros, crédito o cumplimiento normativo. La responsabilidad sobre las decisiones, políticas, aprobaciones y actividades reguladas corresponde al cliente pertinente, salvo que un acuerdo escrito independiente disponga expresamente lo contrario y que dicho acuerdo esté legalmente permitido.',
+    ],
+  },
+  {
+    id: 'compliance-and-lawful-instructions',
+    title: '9. Cumplimiento e instrucciones legales',
+    paragraphs: [
+      'Se espera que tanto Cinpc como sus clientes utilicen los servicios de conformidad con la legislación aplicable y sus obligaciones contractuales.',
+      'Cinpc no está obligada a ejecutar instrucciones que considere razonablemente ilegales, fraudulentas, engañosas, abusivas, incompatibles con un acuerdo aplicable o que puedan exponer a Cinpc o a otra parte a riesgos legales o de seguridad inaceptables.',
+      'Cuando sea necesario, Cinpc puede solicitar aclaraciones, documentación o cambios en un flujo de trabajo propuesto antes de realizar la actividad correspondiente.',
+    ],
+  },
+  {
+    id: 'confidentiality',
+    title: '10. Confidencialidad',
+    paragraphs: [
+      'Durante las conversaciones sobre los servicios o durante su prestación, Cinpc y sus clientes pueden intercambiar información empresarial, operativa, técnica, de clientes u otra información confidencial.',
+      'Las obligaciones de confidencialidad relacionadas con un encargo específico pueden establecerse en un acuerdo de prestación de servicios, un acuerdo de confidencialidad, un acuerdo de tratamiento de datos u otro documento escrito entre las partes.',
+      'Ninguna de las partes debe divulgar información confidencial recibida de la otra, salvo cuando la divulgación esté autorizada, sea necesaria para cumplir las obligaciones acordadas o sea exigida por la legislación aplicable.',
+    ],
+  },
+  {
+    id: 'personal-data',
+    title: '11. Datos personales',
+    paragraphs: [
+      [
+        'El uso del sitio web y la prestación de determinados servicios pueden implicar el tratamiento de datos personales. La información sobre los datos personales recopilados directamente a través del sitio web de Cinpc se proporciona en la ',
+        { href: '/privacy-policy', label: 'Política de Privacidad' },
+        ' de Cinpc.',
+      ],
+      'Cuando Cinpc trate datos personales en nombre de un cliente empresarial como parte de operaciones externalizadas de atención al cliente, las funciones respectivas, instrucciones, requisitos de seguridad y demás obligaciones de protección de datos podrán regirse por un acuerdo de tratamiento de datos independiente u otra documentación contractual aplicable.',
+      'Los clientes son responsables de garantizar que disponen de una base jurídica adecuada y de los avisos, permisos o autorizaciones necesarios para los datos personales que indiquen a Cinpc que trate en su nombre.',
+    ],
+  },
+  {
+    id: 'intellectual-property',
+    title: '12. Propiedad intelectual',
+    paragraphs: [
+      'Salvo que se indique lo contrario, el sitio web y su contenido, incluidos textos, elementos de marca, logotipos, elementos de diseño, gráficos, estructuras y otros materiales, son propiedad de Cinpc o se utilizan bajo licencia y están protegidos por las leyes de propiedad intelectual aplicables.',
+      'Puedes consultar y utilizar el contenido del sitio web para fines empresariales internos habituales relacionados con la evaluación o el uso de los servicios de Cinpc. No puedes reproducir, distribuir, modificar, volver a publicar, vender, conceder licencias ni explotar comercialmente partes sustanciales del sitio web sin autorización previa.',
+      'Los derechos de propiedad intelectual creados o utilizados en relación con un encargo específico de un cliente se regirán por el acuerdo de prestación de servicios aplicable u otro acuerdo escrito entre las partes.',
+    ],
+  },
+  {
+    id: 'third-party-services-and-links',
+    title: '13. Servicios y enlaces de terceros',
+    paragraphs: [
+      'El sitio web puede contener enlaces a sitios web, plataformas o servicios de terceros. Estos recursos externos funcionan de manera independiente y pueden tener sus propios términos, prácticas de privacidad y medidas de seguridad.',
+      'Cinpc no controla los sitios web de terceros y no es responsable de su contenido, disponibilidad, políticas o prácticas. El acceso a cualquier recurso de terceros queda a tu discreción y está sujeto a los términos aplicables a dicho recurso.',
+    ],
+  },
+  {
+    id: 'website-availability-and-information',
+    title: '14. Disponibilidad e información del sitio web',
+    paragraphs: [
+      'Cinpc procura mantener el sitio web y su información accesibles y útiles, pero no garantiza una disponibilidad ininterrumpida o libre de errores. El sitio web puede no estar disponible ocasionalmente debido a tareas de mantenimiento, problemas técnicos, actualizaciones, medidas de seguridad o circunstancias fuera de un control razonable.',
+      'El contenido del sitio web se proporciona como información general sobre Cinpc y sus servicios. Las descripciones de los servicios pueden actualizarse a medida que evolucionen las operaciones, y la disponibilidad o el alcance exacto de un servicio pueden depender de los requisitos de cada encargo específico.',
+    ],
+  },
+  {
+    id: 'no-guarantee-of-engagement-or-results',
+    title: '15. Ausencia de garantía de contratación o resultados',
+    paragraphs: [
+      'La información presentada en el sitio web no garantiza que Cinpc acepte un proyecto determinado ni que todos los servicios sean adecuados para todas las empresas.',
+      'Los objetivos operativos específicos, niveles de servicio, tiempos de respuesta, estándares de rendimiento u otros compromisos medibles solo serán aplicables cuando hayan sido expresamente acordados en la documentación contractual correspondiente.',
+      'Cinpc no garantiza resultados comerciales, financieros, de cobro, ventas, retención de clientes, cumplimiento normativo u otros resultados empresariales específicos por el mero hecho de utilizar sus servicios.',
+    ],
+  },
+  {
+    id: 'fees-and-payment',
+    title: '16. Tarifas y pagos',
+    paragraphs: [
+      'Las tarifas de los servicios de Cinpc se determinan de acuerdo con el presupuesto, propuesta, acuerdo de prestación de servicios, declaración de trabajo, formulario de pedido u otro acuerdo comercial aplicable celebrado con el cliente.',
+      'Los calendarios de pago, monedas, requisitos de facturación, impuestos, disposiciones relativas a pagos atrasados y cualquier otra condición financiera se especificarán en el acuerdo correspondiente cuando proceda.',
+      'Salvo que se indique expresamente en un acuerdo aplicable, la información publicada en el sitio web no constituye una oferta de precio vinculante.',
+    ],
+  },
+  {
+    id: 'cancellation-and-refunds',
+    title: '17. Cancelaciones y reembolsos',
+    paragraphs: [
+      [
+        'Las cancelaciones, terminaciones, créditos, reembolsos y otros ajustes de pago relacionados con los servicios contratados se rigen por el acuerdo aplicable al encargo correspondiente y por la ',
+        { href: '/refund-policy', label: 'Política de Reembolso' },
+        ' de Cinpc cuando dicha política sea aplicable.',
+      ],
+      'Debido a que Cinpc presta servicios empresariales que pueden implicar contratación de personal, preparación, incorporación, formación, asignación de capacidad y trabajo operativo continuo, no puede asumirse que existe derecho a un reembolso simplemente porque un cliente decida dejar de utilizar un servicio.',
+      'Cualquier solicitud relacionada con un pago o reembolso debe enviarse utilizando los datos de contacto de Cinpc proporcionados en el sitio web.',
+    ],
+  },
+  {
+    id: 'suspension-and-termination',
+    title: '18. Suspensión y terminación',
+    paragraphs: [
+      'Cinpc puede suspender o terminar el acceso a los servicios de conformidad con el acuerdo de prestación de servicios aplicable. Las circunstancias que permiten la suspensión o terminación pueden incluir un incumplimiento sustancial de las obligaciones contractuales, falta de pago, uso ilegal, problemas de seguridad, uso indebido de los servicios u otros motivos especificados en el acuerdo correspondiente.',
+      'Los clientes pueden terminar los servicios de acuerdo con los plazos de preaviso, procedimientos y demás condiciones establecidos en la documentación contractual aplicable.',
+      'La terminación no afecta a los derechos, obligaciones, tarifas o responsabilidades surgidos antes de la fecha efectiva de terminación ni a las disposiciones destinadas a continuar vigentes después de la terminación.',
+    ],
+  },
+  {
+    id: 'limitation-of-liability',
+    title: '19. Limitación de responsabilidad',
+    paragraphs: [
+      'En la máxima medida permitida por la legislación aplicable, Cinpc no será responsable de pérdidas indirectas, incidentales, especiales, punitivas o consecuentes derivadas del uso del sitio web o de los servicios, incluida la pérdida de beneficios, ingresos, oportunidades de negocio, fondo de comercio o ahorros previstos, excepto cuando dicha responsabilidad no pueda excluirse o limitarse legalmente.',
+      'Cualquier limitación, exclusión, límite de responsabilidad, indemnización o distribución de riesgos adicional aplicable a los servicios contratados podrá establecerse en el acuerdo de prestación de servicios correspondiente.',
+      'Nada de lo dispuesto en estos Términos excluye o limita la responsabilidad cuando hacerlo esté prohibido por la legislación aplicable.',
+    ],
+  },
+  {
+    id: 'indemnification',
+    title: '20. Indemnización',
+    paragraphs: [
+      'En la medida permitida por la legislación aplicable y por cualquier acuerdo específico entre las partes, un cliente puede ser responsable de las pérdidas, reclamaciones, responsabilidades o costes razonables derivados de instrucciones ilegales, materiales no autorizados, infracción de derechos de terceros, uso indebido de los servicios o incumplimiento sustancial de sus obligaciones contractuales.',
+      'Cualquier obligación de indemnización más específica aplicable a un encargo se regirá por el acuerdo de prestación de servicios correspondiente.',
+    ],
+  },
+  {
+    id: 'force-majeure',
+    title: '21. Fuerza mayor',
+    paragraphs: [
+      'Cinpc no será responsable de retrasos o incumplimientos de una obligación cuando su cumplimiento se vea impedido por circunstancias fuera de su control razonable, sin perjuicio de cualquier disposición diferente contenida en el acuerdo de prestación de servicios aplicable.',
+      'Estas circunstancias pueden incluir fallos importantes de telecomunicaciones o infraestructura, desastres naturales, acciones gubernamentales, interrupciones generalizadas, disturbios civiles, conflictos armados u otros acontecimientos que razonablemente no pudieran haberse evitado o controlado.',
+    ],
+  },
+  {
+    id: 'changes-to-these-terms',
+    title: '22. Cambios en estos Términos',
+    paragraphs: [
+      'Cinpc puede actualizar estos Términos y Condiciones para reflejar cambios en el sitio web, los servicios, las prácticas operativas o los requisitos legales aplicables.',
+    ],
+  },
+  {
+    id: 'governing-law-and-jurisdiction',
+    title: '23. Legislación aplicable y jurisdicción',
+    paragraphs: [
+      'Estos Términos y Condiciones se rigen por las leyes de [insertar país/jurisdicción aplicable], sin perjuicio de los principios sobre conflictos de leyes cuando correspondan.',
+      'Cualquier disputa derivada de estos Términos, del sitio web o de los servicios que no esté regulada por un acuerdo independiente estará sujeta a la jurisdicción de los tribunales competentes de [insertar jurisdicción].',
+      'Cuando un acuerdo de prestación de servicios independiente contenga sus propias disposiciones sobre legislación aplicable o resolución de disputas, dichas disposiciones se aplicarán al encargo correspondiente.',
+    ],
+  },
+  {
+    id: 'severability',
+    title: '24. Divisibilidad',
+    paragraphs: [
+      'Si alguna disposición de estos Términos se considera inválida, ilegal o inaplicable, dicha disposición se interpretará o limitará en la medida necesaria conforme a la legislación aplicable. Las disposiciones restantes continuarán en vigor.',
+    ],
+  },
+  {
+    id: 'contact-us',
+    title: '25. Contacto',
+    paragraphs: [
+      'Las preguntas sobre estos Términos y Condiciones o sobre el uso de los servicios de Cinpc pueden dirigirse a:',
+      [
+        'Correo electrónico: ',
+        { href: `mailto:${contact.email}`, label: contact.email },
+      ],
+      [
+        'Teléfono: ',
+        { href: `tel:${contact.phone}`, label: contact.phone },
+      ],
+      [
+        'Formulario de contacto: Disponible en la página ',
+        { href: contactFormHref, label: 'Contacto' },
+        ' del sitio web de Cinpc.',
+      ],
+    ],
+  },
+];
+
+export function getTermsConditions(locale: string): PolicySection[] {
+  return locale === 'es' ? termsConditionsEs : termsConditions;
+}

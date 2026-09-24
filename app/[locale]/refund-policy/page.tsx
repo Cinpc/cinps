@@ -1,18 +1,22 @@
+import { getLocale, getTranslations } from 'next-intl/server';
 import HomeHero from '@/app/[locale]/(home)/HomeHero';
 import TermsContent from '@/app/[locale]/terms-conditions/components/TermsContent';
-import { refundPolicy } from '@/data/refund-policy';
+import { getRefundPolicy } from '@/data/refund-policy';
 
-export default function refundPolicyPage() {
+export default async function refundPolicyPage() {
+  const locale = await getLocale();
+  const t = await getTranslations('RefundHero');
+
   return (
     <>
       <HomeHero
-        title="Refund Policy"
+        title={t('title')}
         imageSrc="/terms-conditions/hero.png"
         imageSrcMobile="/terms-conditions/hero-mobile.png"
         contentClassName="max-md:min-h-113"
         cardClassName="max-w-163.25"
       />
-      <TermsContent sections={refundPolicy} />
+      <TermsContent sections={getRefundPolicy(locale)} />
     </>
   );
 }

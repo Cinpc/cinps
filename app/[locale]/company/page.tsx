@@ -1,27 +1,29 @@
-import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
+import { getPageMetadata } from '@/i18n/metadata';
 import HomeHero from '@/app/[locale]/(home)/HomeHero';
 import CompanyAbout from '@/app/[locale]/company/component/CompanyAbout';
 import CompanyCloseEnough from '@/app/[locale]/company/component/CompanyCloseEnough';
 import CompanyFocused from '@/app/[locale]/company/component/CompanyFocused';
 import CompanyPeopleBehind from '@/app/[locale]/company/component/CompanyPeopleBehind';
 import CompanyLetsTalk from '@/app/[locale]/company/component/CompanyLetsTalk';
+import { contactFormHref } from '@/data/contact';
 
-export const metadata: Metadata = {
-  title: 'Financial Call Center Outsourcing Company | Cinpc',
-  description:
-    'Learn about Cinpc, a call center outsourcing company providing customer and operational support for businesses across the financial sector.',
-};
+export function generateMetadata() {
+  return getPageMetadata('company');
+}
 
-export default function CompanyPage() {
+export default async function CompanyPage() {
+  const t = await getTranslations('CompanyHero');
+
   return (
     <>
       <HomeHero
-        title="Built to Take Customer Operations Off Your Plate"
-        description="Cinpc is a call center outsourcing partner for financial businesses that need more capacity without adding another internal function."
+        title={t('title')}
+        description={t('description')}
         imageSrc="/company/hero.png"
         imageSrcMobile="/company/hero-mobile.png"
-        buttonText="Discuss Your Needs"
-        buttonHref="/contact"
+        buttonText={t('button')}
+        buttonHref={contactFormHref}
         contentClassName="max-md:min-h-140.5"
         cardClassName="max-w-181"
       />

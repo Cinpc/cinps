@@ -1,52 +1,46 @@
+import { getTranslations } from 'next-intl/server';
 import Title from '@/components/Title';
 import Image from 'next/image';
 import Description from '@/components/Description';
 
-const items = [
-  {
-    title: 'What Cinpc handles',
-  },
-  {
-    title: 'What stays in-house',
-  },
-  {
-    title: 'When a case is handed back',
-  },
-  {
-    title: 'How different situations should be handled',
-  },
-];
+const itemKeys = [
+  'handles',
+  'staysInHouse',
+  'handedBack',
+  'situations',
+] as const;
 
-export default function ProcessClearLines() {
+export default async function ProcessClearLines() {
+  const t = await getTranslations('ProcessClearLines');
+
   return (
     <section className="py-16">
       <div className="container">
         <div className="grid lg:grid-cols-[1fr_0.73261fr] gap-6">
           <div>
             <Title variant="purple" className="mb-4 max-lg:leading-[142.857%]">
-              Clear Lines from the Start
+              {t('title')}
             </Title>
 
             <Description className="mb-4 md:leading-[150%] leading-[131.25%] max-md:text-base">
-              Before launch, both teams know where responsibilities sit.
+              {t('description')}
             </Description>
 
             <div className="space-y-2 md:space-y-4 mb-4">
-              {items.map((item) => (
+              {itemKeys.map((key) => (
                 <div
-                  key={item.title}
+                  key={key}
                   className="relative before:content-[''] before:absolute before:left-0 before:top-0 before:h-full before:w-1.25 before:bg-blue pl-7 max-md:space-y-2"
                 >
                   <Title as="h3" className="font-normal leading-[140%]">
-                    {item.title}
+                    {t(key)}
                   </Title>
                 </div>
               ))}
             </div>
 
             <Description className="leading-[150%] max-md:text-base">
-              This keeps the outsourced operation connected to your internal
-              team without blurring responsibilities.
+              {t('afterList')}
             </Description>
           </div>
 

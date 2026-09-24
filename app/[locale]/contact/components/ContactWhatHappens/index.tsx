@@ -1,37 +1,24 @@
+import { getTranslations } from 'next-intl/server';
 import Title from '@/components/Title';
 import Image from 'next/image';
 import Description from '@/components/Description';
 
-const items = [
-  {
-    title: 'We Review',
-    description:
-      'We look at what you need covered and the type of customer communication involved.',
-  },
-  {
-    title: 'We Talk',
-    description:
-      'Our team contacts you to clarify volumes, workflows, priorities, and requirements.',
-  },
-  {
-    title: 'We Scope It',
-    description:
-      'We outline a call center setup that matches the work you want to outsource.\n',
-  },
-];
+const itemKeys = ['review', 'talk', 'scope'] as const;
 
-export default function ContactWhatHappens() {
+export default async function ContactWhatHappens() {
+  const t = await getTranslations('ContactWhatHappens');
+
   return (
     <section className="py-16 max-lg:px-2">
       <div className="container">
         <Title variant="purple" className="mb-8 lg:text-center">
-          What Happens After You Contact Us?
+          {t('title')}
         </Title>
 
         <div className="grid lg:grid-cols-[270px_220px_220px] justify-between gap-y-24.5">
-          {items.map((item, index) => (
+          {itemKeys.map((key, index) => (
             <div
-              key={item.title}
+              key={key}
               className="group max-lg:flex max-lg:gap-4 max-lg:items-center relative"
             >
               <div className="relative max-md:max-w-10.5 max-lg:shrink-0">
@@ -56,14 +43,14 @@ export default function ContactWhatHappens() {
                   <span className="text-blue inline-block mr-4">
                     {String(index + 1).padStart(2, '0')}
                   </span>
-                  {item.title}
+                  {t(`${key}.title`)}
                 </Title>
 
                 <Description
                   className="font-satoshi tracking-[-0.432px] text-mid-gray"
                   size="base"
                 >
-                  {item.description}
+                  {t(`${key}.description`)}
                 </Description>
               </div>
               <div className="absolute h-20 w-px top-full left-5.25 group-last:hidden lg:hidden">

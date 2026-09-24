@@ -4,6 +4,9 @@ export const contact = {
   address: '[INSERT ADDRESS]',
 };
 
+export const contactFormId = 'start-the-conversation';
+export const contactFormHref = `/contact#${contactFormId}`;
+
 export const socials = [
   {
     id: 'instagram',

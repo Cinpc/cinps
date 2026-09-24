@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { getTranslations } from 'next-intl/server';
 import { cn } from 'cn';
 import Title from '@/components/Title';
 import Description from '@/components/Description';
@@ -6,31 +7,23 @@ import { Card } from '@/components/ui/card';
 
 const items = [
   {
+    key: 'fintech',
     image: '/home/built-for-one.png',
-    title: 'FinTech',
-    description:
-      'Cover customer communication around digital financial products and services.',
   },
   {
+    key: 'lending',
     image: '/home/built-for-two.png',
-    title: 'Lending',
-    description:
-      'Keep borrower inquiries, follow-ups, and routine contact moving.',
   },
   {
+    key: 'insurance',
     image: '/home/built-for-three.png',
-    title: 'Insurance',
-    description:
-      'Support customers through questions, requests, and ongoing communication.',
     aspect: 'aspect-[317/230]',
   },
   {
+    key: 'financialServices',
     image: '/home/built-for-four.png',
-    title: 'Financial Services',
-    description:
-      'Add external call center capacity to established customer operations.',
   },
-];
+] as const;
 
 function ItemImage({
   src,
@@ -56,37 +49,33 @@ function ItemImage({
   );
 }
 
-export default function SolutionsBuiltFor() {
+export default async function SolutionsBuiltFor() {
+  const t = await getTranslations('SolutionsBuiltFor');
+
   return (
     <section className="py-16">
       <div className="container">
         <Title
           variant="purple"
-          className="mb-4 lg:leading-[140.625%] tracking-[-0.351px]"
+          className="mb-8 lg:leading-[140.625%] tracking-[-0.351px]"
         >
-          Built for Financial Customer Operations
+          {t('title')}
         </Title>
-        <Description
-          size="17"
-          className="max-w-141.25 tracking-[0.103px] leading-[141.176%] mb-8 font-satoshi"
-        >
-          We handle customer support, outbound communication, sales assistance,
-          and recurring customer contact as an extension of your operations.
-        </Description>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {items.map((item, index) => {
             const imageOnTop = index === 0 || index === 3;
+            const title = t(`${item.key}.title`);
 
             return (
               <div
-                key={item.title}
+                key={item.key}
                 className="flex flex-col gap-4.25 justify-between bg-transparent"
               >
                 <ItemImage
                   src={item.image}
-                  alt={item.title}
-                  aspect={item.aspect}
+                  alt={title}
+                  aspect={'aspect' in item ? item.aspect : undefined}
                   className={cn(imageOnTop ? 'lg:order-1' : 'lg:order-2')}
                 />
 
@@ -97,10 +86,10 @@ export default function SolutionsBuiltFor() {
                   )}
                 >
                   <Title as="h3" className="mb-2.5 leading-none">
-                    {item.title}
+                    {title}
                   </Title>
                   <Description className="text-base tracking-[-0.432px] leading-[125%] font-satoshi">
-                    {item.description}
+                    {t(`${item.key}.description`)}
                   </Description>
                 </Card>
               </div>

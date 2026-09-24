@@ -1,4 +1,4 @@
-import { contact } from '@/data/contact';
+import { contact, contactFormHref } from '@/data/contact';
 import type { PolicySection } from '@/data/terms-conditions';
 
 export const privacyPolicy: PolicySection[] = [
@@ -272,7 +272,7 @@ export const privacyPolicy: PolicySection[] = [
     paragraphs: [
       [
         'To make a privacy request concerning personal data processed directly by Cinpc, contact us using the details provided at the end of this Privacy Policy or through the contact form available on the ',
-        { href: '/contact', label: 'Contact page' },
+        { href: contactFormHref, label: 'Contact page' },
         '.',
       ],
       'We may need to verify your identity before completing a request. We may also request additional information where necessary to identify the relevant data or understand the scope of your request.',
@@ -319,9 +319,344 @@ export const privacyPolicy: PolicySection[] = [
       ['Phone: ', { href: `tel:${contact.phone}`, label: contact.phone }],
       [
         'Contact form: Available on the ',
-        { href: '/contact', label: 'Contact page' },
+        { href: contactFormHref, label: 'Contact page' },
         ' of the Cinpc website.',
       ],
     ],
   },
 ];
+
+export const privacyPolicyEs: PolicySection[] = [
+  {
+    id: 'intro',
+    paragraphs: [
+      'Esta Política de Privacidad explica cómo Cinpc recopila, utiliza, almacena y trata de cualquier otra forma los datos personales cuando visitas cinpc.com, contactas con nosotros, solicitas información o un presupuesto, o interactúas con nosotros de cualquier otra manera.',
+      `Cinpc es una marca operada por CALL CENTER INP, registrada en ${contact.address} con el número de registro [insertar número de registro].`,
+      'Tratamos los datos personales de conformidad con las leyes aplicables en materia de protección de datos y privacidad. Las normas y los derechos específicos que se te apliquen pueden depender de tu ubicación y de las circunstancias en las que se traten tus datos personales.',
+    ],
+  },
+  {
+    id: 'scope-of-this-privacy-policy',
+    title: '1. Alcance de esta Política de Privacidad',
+    paragraphs: [
+      'Esta Política de Privacidad se aplica principalmente a los datos personales recopilados a través del sitio web de Cinpc y de las comunicaciones comerciales directas con clientes potenciales y existentes.',
+      'Cinpc también presta servicios externalizados de call center y externalización de procesos empresariales a empresas del sector financiero. Al prestar estos servicios, Cinpc puede tratar datos personales relacionados con clientes, solicitantes, prestatarios, asegurados, usuarios u otras personas vinculadas a sus clientes.',
+      'Cuando Cinpc trata dichos datos personales en nombre de un cliente y de acuerdo con sus instrucciones, el cliente generalmente determina los fines y medios del tratamiento, de conformidad con la legislación aplicable. Estas actividades también pueden estar reguladas por un acuerdo de prestación de servicios independiente, un acuerdo de tratamiento de datos, un aviso de privacidad u otra documentación contractual.',
+    ],
+  },
+  {
+    id: 'personal-data-we-collect',
+    title: '2. Datos personales que recopilamos',
+    paragraphs: [
+      'Los datos personales que recopilamos dependen de cómo interactúes con Cinpc.',
+    ],
+  },
+  {
+    id: 'information-you-provide-through-the-contact-form',
+    title: 'Información que proporcionas a través del formulario de contacto',
+    nav: false,
+    paragraphs: [
+      'Cuando envías el formulario de contacto del sitio web de Cinpc, podemos recopilar:',
+    ],
+    list: [
+      'Tu nombre completo.',
+      'El nombre de tu empresa.',
+      'Tu dirección de correo electrónico corporativo.',
+      'Tu número de teléfono, si decides proporcionarlo.',
+      'El tipo de servicio o soporte que te interesa.',
+      'Tu volumen mensual estimado de llamadas.',
+      'La información que proporciones en el campo «Cuéntanos más».',
+      'Cualquier otra información que incluyas voluntariamente en tu solicitud.',
+    ],
+    afterList: [
+      'Evita incluir información personal sensible o confidencial que no sea necesaria en los campos de texto libre.',
+    ],
+  },
+  {
+    id: 'information-you-provide-directly',
+    title: 'Información que proporcionas directamente',
+    nav: false,
+    paragraphs: [
+      'Si te comunicas con Cinpc por correo electrónico, teléfono, a través de la página Contacto o mediante cualquier otro canal de comunicación empresarial disponible, podemos recopilar la información que proporciones durante dicha comunicación.',
+      'Esto puede incluir tu nombre, cargo o función profesional, información de la empresa, datos de contacto, requisitos del servicio, correspondencia y otra información relevante para tu consulta o relación comercial con Cinpc.',
+    ],
+  },
+  {
+    id: 'information-collected-automatically',
+    title: 'Información recopilada automáticamente',
+    nav: false,
+    paragraphs: [
+      'Cuando accedes al sitio web de Cinpc, determinada información técnica puede ser recopilada automáticamente por el sitio web, la infraestructura de alojamiento, los sistemas de seguridad o las tecnologías utilizadas en el sitio.',
+      'Dependiendo de las tecnologías implementadas, esta información puede incluir:',
+    ],
+    list: [
+      'Dirección IP.',
+      'Tipo y versión del navegador.',
+      'Tipo de dispositivo y sistema operativo.',
+      'Configuración de idioma.',
+      'Páginas visitadas e interacciones con el sitio web.',
+      'Fecha y hora de acceso.',
+      'Páginas de referencia y de salida.',
+      'Información técnica, de diagnóstico y de seguridad de carácter general.',
+      'Identificadores de cookies y tecnologías similares, cuando corresponda.',
+    ],
+    afterList: [
+      [
+        'Puedes encontrar más información sobre las cookies y tecnologías similares en la ',
+        { href: '/cookie-policy', label: 'Política de Cookies' },
+        ' de Cinpc.',
+      ],
+    ],
+  },
+  {
+    id: 'how-we-use-personal-data',
+    title: '3. Cómo utilizamos los datos personales',
+    paragraphs: [],
+    listIntro: 'Cinpc puede tratar datos personales para fines que incluyen:',
+    list: [
+      'Recibir y responder consultas.',
+      'Revisar las solicitudes enviadas a través del sitio web.',
+      'Contactar con clientes potenciales para hablar sobre sus necesidades.',
+      'Comprender qué servicios de call center o BPO pueden ser adecuados para una empresa.',
+      'Preparar y analizar presupuestos, propuestas, alcances de trabajo o posibles acuerdos de prestación de servicios.',
+      'Comunicarse con clientes actuales y potenciales.',
+      'Establecer y gestionar relaciones comerciales.',
+      'Prestar los servicios acordados.',
+      'Mantener registros de comunicaciones comerciales.',
+      'Operar, mantener y proteger el sitio web.',
+      'Identificar y prevenir usos indebidos, fraudes, incidentes de seguridad o actividades no autorizadas.',
+      'Mejorar la funcionalidad del sitio web y comprender cómo se utiliza, cuando corresponda.',
+      'Cumplir obligaciones legales, normativas, contables o contractuales.',
+      'Establecer, ejercer o defender reclamaciones legales.',
+    ],
+    afterList: [
+      'No utilizamos los datos personales para fines incompatibles con el motivo por el que fueron recopilados, salvo cuando lo permita o exija la legislación aplicable.',
+    ],
+  },
+  {
+    id: 'legal-bases-for-processing',
+    title: '4. Bases jurídicas para el tratamiento',
+    paragraphs: [
+      'Cuando la legislación aplicable en materia de protección de datos requiera una base jurídica para tratar datos personales, Cinpc podrá basarse en una o varias de las siguientes bases, dependiendo de las circunstancias:',
+    ],
+    list: [
+      [
+        { strong: 'Consentimiento:' },
+        ' Cuando hayas otorgado un consentimiento válido para una determinada actividad de tratamiento.',
+      ],
+      [
+        { strong: 'Necesidad contractual:' },
+        ' Cuando el tratamiento sea necesario para celebrar o ejecutar un contrato o para adoptar las medidas solicitadas antes de celebrar un contrato.',
+      ],
+      [
+        { strong: 'Intereses legítimos:' },
+        ' Cuando el tratamiento sea necesario para fines empresariales legítimos y dichos intereses no prevalezcan sobre tus derechos e intereses aplicables.',
+      ],
+      [
+        { strong: 'Obligaciones legales:' },
+        ' Cuando el tratamiento sea necesario para cumplir un requisito legal o normativo aplicable.',
+      ],
+      [
+        { strong: 'Reclamaciones legales:' },
+        ' Cuando el tratamiento sea necesario para establecer, ejercer o defender derechos o reclamaciones legales.',
+      ],
+    ],
+    afterList: [
+      'La base jurídica adecuada puede variar en función del tipo de información, la relación y la actividad de tratamiento correspondiente.',
+    ],
+  },
+  {
+    id: 'contact-form-consent',
+    title: '5. Consentimiento del formulario de contacto',
+    paragraphs: [
+      'El formulario de contacto de Cinpc requiere que los usuarios confirmen que aceptan el tratamiento de sus datos personales de conformidad con esta Política de Privacidad antes de enviar una solicitud.',
+      'La información enviada a través del formulario se utiliza principalmente para revisar tu solicitud, comunicarnos contigo, comprender las necesidades de tu empresa y adoptar medidas para establecer una posible relación comercial.',
+      'Cuando el tratamiento se base específicamente en tu consentimiento, puedes retirarlo en cualquier momento. La retirada del consentimiento no afecta a la licitud del tratamiento realizado antes de dicha retirada, y Cinpc podrá continuar tratando la información cuando exista otra base jurídica aplicable.',
+    ],
+  },
+  {
+    id: 'business-communications',
+    title: '6. Comunicaciones comerciales',
+    paragraphs: [
+      'Si contactas con Cinpc en relación con sus servicios, podemos utilizar tus datos de contacto profesionales para responder a tu consulta y continuar las comunicaciones relacionadas con tu solicitud.',
+      'Cuando representes a un cliente empresarial potencial o existente, también podemos conservar las comunicaciones y los datos de contacto relevantes para gestionar la relación, administrar los servicios, mantener conversaciones contractuales y conservar registros empresariales legítimos.',
+      'Cinpc no considera que el envío de una consulta sobre sus servicios constituya un permiso ilimitado para utilizar tus datos de contacto con fines no relacionados.',
+    ],
+  },
+  {
+    id: 'personal-data-processed-for-clients',
+    title: '7. Datos personales tratados para clientes',
+    paragraphs: [
+      'Cinpc presta servicios externalizados de atención al cliente que pueden implicar el tratamiento de datos personales en nombre de sus clientes empresariales. Dependiendo del encargo concreto, esto puede ocurrir en relación con la atención al cliente, solicitudes, comunicaciones relacionadas con verificaciones, soporte de cobros, comunicaciones relacionadas con fraudes, gestión de reclamaciones, seguimientos u otras operaciones de atención al cliente acordadas.',
+      'Las categorías de datos tratados en estas circunstancias dependen de la actividad del cliente, la función externalizada y el alcance del acuerdo de prestación de servicios correspondiente.',
+      'Cuando Cinpc actúa en nombre de un cliente, el tratamiento se realiza de acuerdo con el alcance acordado, las instrucciones documentadas, los requisitos contractuales aplicables y las obligaciones pertinentes en materia de protección de datos. El cliente sigue siendo responsable de determinar si dispone de una base jurídica adecuada para los datos personales y los procesos de atención al cliente que encarga a Cinpc, salvo que la legislación aplicable disponga lo contrario.',
+      'Si tus datos personales han sido tratados por Cinpc exclusivamente en nombre de uno de sus clientes, es posible que las solicitudes relacionadas con dichos datos deban dirigirse al cliente correspondiente como organización responsable de determinar cómo y por qué se trata la información.',
+    ],
+  },
+  {
+    id: 'financial-and-sensitive-information',
+    title: '8. Información financiera y sensible',
+    paragraphs: [
+      'Debido a que Cinpc presta soporte a empresas que operan en el sector financiero, determinados encargos de clientes pueden implicar información personal u operativa que requiera medidas adicionales de protección.',
+      'La información exacta a la que Cinpc está autorizada a acceder o que puede tratar depende de la función externalizada y de las instrucciones proporcionadas por el cliente correspondiente. Cinpc no solicita a los visitantes que proporcionen información de cuentas financieras, credenciales de pago, documentos de identidad u otra información sensible a través del formulario general de contacto del sitio web, salvo que se solicite específicamente mediante un proceso autorizado adecuado.',
+      'No envíes contraseñas, datos de tarjetas de pago, credenciales de cuentas u otra información sensible innecesaria a través del formulario general de contacto.',
+    ],
+  },
+  {
+    id: 'how-we-share-personal-data',
+    title: '9. Cómo compartimos los datos personales',
+    paragraphs: [
+      'Cinpc no divulga datos personales de manera indiscriminada. Los datos personales pueden compartirse cuando sea razonablemente necesario para los fines descritos en esta Política de Privacidad.',
+      'Dependiendo de las circunstancias, los destinatarios pueden incluir:',
+    ],
+    list: [
+      'Proveedores de servicios que prestan soporte de alojamiento web, infraestructura, comunicaciones, seguridad u otras operaciones empresariales.',
+      'Asesores profesionales, como profesionales jurídicos, contables, de cumplimiento normativo o auditoría, cuando sea necesario.',
+      'Clientes empresariales cuando el tratamiento se realice en relación con un servicio externalizado acordado.',
+      'Autoridades públicas, organismos reguladores, tribunales o fuerzas y cuerpos de seguridad cuando la divulgación sea exigida o permitida por la ley.',
+      'Partes involucradas en una fusión, adquisición, reestructuración, financiación, venta de activos u otra operación corporativa similar, sujetas a las garantías adecuadas cuando sean necesarias.',
+    ],
+    afterList: [
+      'Los proveedores de servicios que reciban datos personales en nuestro nombre solo podrán tratar dicha información para fines autorizados y de conformidad con los requisitos contractuales y legales aplicables.',
+    ],
+  },
+  {
+    id: 'international-data-transfers',
+    title: '10. Transferencias internacionales de datos',
+    paragraphs: [
+      'Cinpc, sus clientes o sus proveedores de servicios pueden operar en diferentes países. Como resultado, en determinadas circunstancias los datos personales pueden ser tratados o almacenados fuera del país en el que fueron recopilados originalmente.',
+      'Cuando la legislación aplicable restrinja las transferencias internacionales de datos personales, Cinpc utilizará un mecanismo de transferencia adecuado u otras garantías exigidas por dicha legislación.',
+      'Las garantías específicas utilizadas pueden depender de los países implicados, la naturaleza del tratamiento y el marco jurídico aplicable a la transferencia.',
+    ],
+  },
+  {
+    id: 'data-retention',
+    title: '11. Conservación de datos',
+    paragraphs: [
+      'Cinpc conserva los datos personales únicamente durante el tiempo razonablemente necesario para los fines para los que fueron recopilados o durante el período exigido por las obligaciones legales, contractuales, normativas, contables o de resolución de disputas aplicables.',
+      'Los períodos de conservación pueden variar en función de:',
+    ],
+    list: [
+      'La naturaleza y la finalidad de la información.',
+      'Si una consulta da lugar a una relación comercial.',
+      'La duración de la relación con un cliente.',
+      'Los requisitos contractuales aplicables.',
+      'Las obligaciones legales o normativas de conservación de registros.',
+      'La necesidad de establecer, ejercer o defender reclamaciones legales.',
+      'Los requisitos de seguridad y prevención del fraude.',
+    ],
+    afterList: [
+      'Cuando los datos personales dejen de ser necesarios, podrán eliminarse, anonimizarse o destruirse de forma segura de acuerdo con los requisitos aplicables.',
+    ],
+  },
+  {
+    id: 'data-security',
+    title: '12. Seguridad de los datos',
+    paragraphs: [
+      'Cinpc utiliza medidas organizativas y técnicas razonables destinadas a proteger los datos personales frente al acceso, divulgación, alteración, pérdida, uso indebido o destrucción no autorizados.',
+      'Las medidas aplicadas pueden variar en función de la naturaleza de la información, la actividad de tratamiento y los sistemas implicados. Cuando Cinpc trate información como parte de un encargo específico de un cliente, podrán establecerse requisitos de seguridad adicionales en la documentación contractual aplicable.',
+      'Ningún método de transmisión o almacenamiento electrónico puede garantizarse como completamente seguro. Por ello, los usuarios deben adoptar precauciones razonables al enviar información por medios electrónicos y evitar proporcionar información que no sea necesaria para el fin correspondiente.',
+    ],
+  },
+  {
+    id: 'cookies-and-similar-technologies',
+    title: '13. Cookies y tecnologías similares',
+    paragraphs: [
+      'El sitio web de Cinpc puede utilizar cookies y tecnologías similares necesarias para el funcionamiento del sitio web, la seguridad, las preferencias, el análisis u otros fines.',
+      'Cuando lo exija la legislación aplicable, las cookies no esenciales solo se utilizarán después de haber obtenido el consentimiento requerido.',
+      [
+        'Puedes encontrar más información sobre las categorías de cookies utilizadas, sus finalidades, los controles disponibles y los períodos de conservación aplicables en la ',
+        { href: '/cookie-policy', label: 'Política de Cookies' },
+        ' de Cinpc.',
+      ],
+    ],
+  },
+  {
+    id: 'your-privacy-rights',
+    title: '14. Tus derechos de privacidad',
+    paragraphs: [
+      'Dependiendo de las leyes de protección de datos que se te apliquen, puedes tener determinados derechos relacionados con tus datos personales. Estos pueden incluir el derecho a:',
+    ],
+    list: [
+      'Solicitar acceso a los datos personales que conservamos sobre ti.',
+      'Solicitar la rectificación de datos personales inexactos o incompletos.',
+      'Solicitar la eliminación de datos personales en determinadas circunstancias.',
+      'Solicitar la limitación de determinadas actividades de tratamiento.',
+      'Oponerte al tratamiento basado en determinadas bases jurídicas.',
+      'Retirar tu consentimiento cuando el tratamiento se base en el consentimiento.',
+      'Solicitar la portabilidad de determinados datos personales cuando corresponda.',
+      'Presentar una reclamación ante la autoridad de protección de datos competente.',
+    ],
+    afterList: [
+      'Estos derechos no son absolutos y pueden estar sujetos a condiciones legales, excepciones, requisitos de verificación y limitaciones.',
+    ],
+  },
+  {
+    id: 'exercising-your-rights',
+    title: '15. Ejercicio de tus derechos',
+    paragraphs: [
+      [
+        'Para realizar una solicitud relacionada con datos personales tratados directamente por Cinpc, contacta con nosotros utilizando los datos proporcionados al final de esta Política de Privacidad o mediante el formulario de contacto disponible en la página ',
+        { href: contactFormHref, label: 'Contacto' },
+        '.',
+      ],
+      'Es posible que necesitemos verificar tu identidad antes de completar una solicitud. También podemos solicitar información adicional cuando sea necesario para identificar los datos correspondientes o comprender el alcance de tu solicitud.',
+      'Si Cinpc trata la información correspondiente exclusivamente en nombre de un cliente empresarial, podemos dirigir tu solicitud a dicho cliente o ayudarle a responder, dependiendo de nuestra función legal y nuestras obligaciones contractuales.',
+    ],
+  },
+  {
+    id: 'complaints',
+    title: '16. Reclamaciones',
+    paragraphs: [
+      'Si tienes alguna inquietud sobre cómo Cinpc trata tus datos personales, puedes contactar con nosotros para que podamos revisar el asunto.',
+      'Dependiendo de tu ubicación y de la legislación aplicable, también puedes tener derecho a presentar una reclamación ante la autoridad competente en materia de protección de datos o privacidad de tu jurisdicción.',
+    ],
+  },
+  {
+    id: 'third-party-websites',
+    title: '17. Sitios web de terceros',
+    paragraphs: [
+      'El sitio web de Cinpc puede contener enlaces a sitios web o servicios operados por terceros. Cinpc no controla las prácticas de privacidad de dichos terceros.',
+      'Si sigues un enlace externo, el tratamiento de datos personales en el sitio web de destino estará regulado por la política de privacidad u otros términos aplicables de ese tercero. Recomendamos revisar dichas políticas antes de proporcionar información personal.',
+    ],
+  },
+  {
+    id: 'childrens-privacy',
+    title: '18. Privacidad de los menores',
+    paragraphs: [
+      'El sitio web y los servicios de Cinpc están destinados a un uso empresarial y profesional y no están dirigidos a menores.',
+      'Cinpc no busca deliberadamente recopilar datos personales de menores a través de sus canales generales de consultas empresariales. Si tenemos conocimiento de que se han enviado datos personales relacionados con un menor a través del sitio web sin una base jurídica adecuada, podremos adoptar medidas razonables para eliminar o tratar adecuadamente dicha información.',
+    ],
+  },
+  {
+    id: 'changes-to-this-privacy-policy',
+    title: '19. Cambios en esta Política de Privacidad',
+    paragraphs: [
+      'Cinpc puede actualizar esta Política de Privacidad para reflejar cambios en su sitio web, servicios, prácticas de tratamiento, tecnologías o requisitos legales aplicables.',
+    ],
+  },
+  {
+    id: 'contact-us',
+    title: '20. Contacto',
+    paragraphs: [
+      'Las preguntas, solicitudes o inquietudes relacionadas con esta Política de Privacidad o con el tratamiento de datos personales por parte de Cinpc pueden enviarse a través de:',
+      [
+        'Correo electrónico: ',
+        { href: `mailto:${contact.email}`, label: contact.email },
+      ],
+      [
+        'Teléfono: ',
+        { href: `tel:${contact.phone}`, label: contact.phone },
+      ],
+      [
+        'Formulario de contacto: Disponible en la página ',
+        { href: contactFormHref, label: 'Contacto' },
+        ' del sitio web de Cinpc.',
+      ],
+    ],
+  },
+];
+
+export function getPrivacyPolicy(locale: string): PolicySection[] {
+  return locale === 'es' ? privacyPolicyEs : privacyPolicy;
+}

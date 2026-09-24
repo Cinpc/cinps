@@ -1,6 +1,8 @@
 'use client';
 
+import { useEffect } from 'react';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { Controller, useForm } from 'react-hook-form';
 import { Select } from '@base-ui/react/select';
@@ -8,23 +10,23 @@ import Title from '@/components/Title';
 import Description from '@/components/Description';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { contact } from '@/data/contact';
+import { contact, contactFormId } from '@/data/contact';
 
 const HELP_WITH_OPTIONS = [
-  'Customer Care',
-  'Outbound Calls',
-  'Sales Support',
-  'Business Support',
-  'Multiple Services',
-  'Other',
+  'customerCare',
+  'outboundCalls',
+  'salesSupport',
+  'businessSupport',
+  'multipleServices',
+  'other',
 ] as const;
 
 const CALL_VOLUME_OPTIONS = [
-  'Under 1,000 per month',
-  '1,000–5,000 per month',
-  '5,000–20,000 per month',
-  '20,000+ per month',
-  'Not sure yet',
+  'under1000',
+  'from1000',
+  'from5000',
+  'from20000',
+  'notSure',
 ] as const;
 
 const selectTriggerClassName =
@@ -47,6 +49,7 @@ function FormSelect({
   onChange,
   onBlur,
   options,
+  getLabel,
   'aria-invalid': ariaInvalid,
 }: {
   id: string;
@@ -54,6 +57,7 @@ function FormSelect({
   onChange: (value: string) => void;
   onBlur: () => void;
   options: readonly string[];
+  getLabel: (value: string) => string;
   'aria-invalid'?: boolean;
 }) {
   return (
@@ -69,7 +73,7 @@ function FormSelect({
         aria-invalid={ariaInvalid}
         className={selectTriggerClassName}
       >
-        <Select.Value />
+        <Select.Value>{value ? getLabel(value) : null}</Select.Value>
         <Select.Icon className="flex shrink-0 transition-transform data-open:rotate-180">
           <Image src="/icons/caret-down.svg" alt="" width={16} height={16} />
         </Select.Icon>
@@ -86,9 +90,10 @@ function FormSelect({
                 <Select.Item
                   key={option}
                   value={option}
+                  label={getLabel(option)}
                   className="cursor-pointer px-4 py-2 text-17 leading-[26px] text-black/25 outline-none data-highlighted:bg-blue/15"
                 >
-                  {option}
+                  {getLabel(option)}
                 </Select.Item>
               ))}
             </Select.List>
@@ -100,6 +105,7 @@ function FormSelect({
 }
 
 export default function ContactStartConversation() {
+  const t = useTranslations('ContactStartConversation');
   const {
     register,
     control,
@@ -117,16 +123,24 @@ export default function ContactStartConversation() {
     console.log(data);
   };
 
+  useEffect(() => {
+    if (window.location.hash !== `#${contactFormId}`) {
+      return;
+    }
+
+    document.getElementById(contactFormId)?.scrollIntoView();
+  }, []);
+
   return (
-    <section className="py-16">
+    <section id={contactFormId} className="scroll-mt-8 py-16">
       <div className="container">
         <div className="grid lg:grid-cols-[1.067fr_1fr] gap-x-6 gap-y-15 items-start">
           <div>
             <Title variant="purple" className="mb-2">
-              Start the Conversation
+              {t('title')}
             </Title>
             <Description size="17" className="mb-4">
-              Give us the basics, and we&apos;ll start from there.
+              {t('description')}
             </Description>
 
             <Card className="bg-light-gray max-lg:p-4">
@@ -136,14 +150,14 @@ export default function ContactStartConversation() {
                     htmlFor="fullName"
                     className="block mb-1 text-purple text-xl leading-[1.5]"
                   >
-                    Full Name*
+                    {t('fullName')}
                   </label>
                   <input
                     id="fullName"
-                    placeholder="Enter your full name"
+                    placeholder={t('fullNamePlaceholder')}
                     aria-invalid={Boolean(errors.fullName)}
                     {...register('fullName', {
-                      required: 'Enter your full name',
+                      required: t('fullNameError'),
                     })}
                     className="bg-blue/15 rounded-2xl px-4 py-2 w-full text-17 text-black/25 leading-[26px]"
                   />
@@ -159,14 +173,14 @@ export default function ContactStartConversation() {
                     htmlFor="companyName"
                     className="block mb-1 text-purple text-xl leading-[1.5]"
                   >
-                    Company Name*
+                    {t('companyName')}
                   </label>
                   <input
                     id="companyName"
-                    placeholder="Enter company name"
+                    placeholder={t('companyNamePlaceholder')}
                     aria-invalid={Boolean(errors.companyName)}
                     {...register('companyName', {
-                      required: 'Enter company name',
+                      required: t('companyNameError'),
                     })}
                     className="bg-blue/15 rounded-2xl px-4 py-2 w-full text-17 text-black/25 leading-[26px]"
                   />
@@ -182,15 +196,15 @@ export default function ContactStartConversation() {
                     htmlFor="businessEmail"
                     className="block mb-1 text-purple text-xl leading-[1.5]"
                   >
-                    Business Email*
+                    {t('businessEmail')}
                   </label>
                   <input
                     id="businessEmail"
                     type="email"
-                    placeholder="Enter your email"
+                    placeholder={t('businessEmailPlaceholder')}
                     aria-invalid={Boolean(errors.businessEmail)}
                     {...register('businessEmail', {
-                      required: 'Enter your email',
+                      required: t('businessEmailError'),
                     })}
                     className="bg-blue/15 rounded-2xl px-4 py-2 w-full text-17 text-black/25 leading-[26px]"
                   />
@@ -206,16 +220,14 @@ export default function ContactStartConversation() {
                     htmlFor="phoneNumber"
                     className="block mb-1 text-purple text-xl leading-[1.5]"
                   >
-                    Phone Number*
+                    {t('phoneNumber')}
                   </label>
                   <input
                     id="phoneNumber"
                     type="tel"
-                    placeholder="Enter phone number"
+                    placeholder={t('phoneNumberPlaceholder')}
                     aria-invalid={Boolean(errors.phoneNumber)}
-                    {...register('phoneNumber', {
-                      required: 'Enter phone number',
-                    })}
+                    {...register('phoneNumber')}
                     className="bg-blue/15 rounded-2xl px-4 py-2 w-full text-17 text-black/25 leading-[26px]"
                   />
                   {errors.phoneNumber ? (
@@ -230,12 +242,12 @@ export default function ContactStartConversation() {
                     htmlFor="helpWith"
                     className="block mb-1 text-purple text-xl leading-[1.5]"
                   >
-                    What Do You Need Help With?*
+                    {t('helpWith')}
                   </label>
                   <Controller
                     name="helpWith"
                     control={control}
-                    rules={{ required: 'Select what you need help with' }}
+                    rules={{ required: t('helpWithError') }}
                     render={({ field }) => (
                       <FormSelect
                         id="helpWith"
@@ -243,6 +255,7 @@ export default function ContactStartConversation() {
                         onChange={field.onChange}
                         onBlur={field.onBlur}
                         options={HELP_WITH_OPTIONS}
+                        getLabel={(option) => t(`helpWithOptions.${option}`)}
                         aria-invalid={Boolean(errors.helpWith)}
                       />
                     )}
@@ -259,7 +272,7 @@ export default function ContactStartConversation() {
                     htmlFor="callVolume"
                     className="block mb-1 text-purple text-xl leading-[1.5]"
                   >
-                    Estimated Call Volume
+                    {t('callVolume')}
                   </label>
                   <Controller
                     name="callVolume"
@@ -271,6 +284,7 @@ export default function ContactStartConversation() {
                         onChange={field.onChange}
                         onBlur={field.onBlur}
                         options={CALL_VOLUME_OPTIONS}
+                        getLabel={(option) => t(`callVolumeOptions.${option}`)}
                       />
                     )}
                   />
@@ -281,11 +295,11 @@ export default function ContactStartConversation() {
                     htmlFor="tellUsMore"
                     className="block mb-1 text-purple text-xl leading-[1.5]"
                   >
-                    Tell Us More
+                    {t('tellUsMore')}
                   </label>
                   <textarea
                     id="tellUsMore"
-                    placeholder="Briefly describe what you need covered"
+                    placeholder={t('tellUsMorePlaceholder')}
                     {...register('tellUsMore')}
                     className="bg-blue/15 rounded-2xl px-4 py-2 w-full text-17 text-black/25 leading-[26px] resize-none min-h-35.5"
                   />
@@ -302,7 +316,7 @@ export default function ContactStartConversation() {
                         type="checkbox"
                         aria-invalid={Boolean(errors.privacyConsent)}
                         {...register('privacyConsent', {
-                          required: 'Agree to the Privacy Policy',
+                          required: t('privacyError'),
                         })}
                         className="peer appearance-none size-10 rounded-[4px] bg-blue/15 cursor-pointer"
                       />
@@ -315,16 +329,17 @@ export default function ContactStartConversation() {
                       />
                     </span>
                     <span className="text-purple text-base leading-[20px]">
-                      I agree to the processing of my personal data in
-                      accordance with the{' '}
-                      <Link
-                        href="/privacy-policy"
-                        className="underline inline"
-                        onClick={(event) => event.stopPropagation()}
-                      >
-                        Privacy Policy
-                      </Link>
-                      .*
+                      {t.rich('privacy', {
+                        policy: (chunks) => (
+                          <Link
+                            href="/privacy-policy"
+                            className="underline inline"
+                            onClick={(event) => event.stopPropagation()}
+                          >
+                            {chunks}
+                          </Link>
+                        ),
+                      })}
                     </span>
                   </label>
                   {errors.privacyConsent ? (
@@ -336,7 +351,7 @@ export default function ContactStartConversation() {
 
                 <div className="text-center">
                   <Button type="submit" className="md:min-w-70.5">
-                    Send Request
+                    {t('submit')}
                   </Button>
                 </div>
               </form>
@@ -345,11 +360,10 @@ export default function ContactStartConversation() {
 
           <div>
             <Title variant="purple" className="mb-2">
-              Prefer to Contact Us Directly?
+              {t('directTitle')}
             </Title>
             <Description size="17" className="mb-4">
-              No form required. Reach the Cinpc team using the contact details
-              below.
+              {t('directDescription')}
             </Description>
 
             <Card className="bg-light-gray p-4">

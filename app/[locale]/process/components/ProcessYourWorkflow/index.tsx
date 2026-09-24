@@ -1,10 +1,13 @@
+import { getTranslations } from 'next-intl/server';
 import Title from '@/components/Title';
 import Description from '@/components/Description';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Link } from '@/i18n/navigation';
 
-export default function ProcessYourWorkflow() {
+export default async function ProcessYourWorkflow() {
+  const t = await getTranslations('ProcessYourWorkflow');
+
   return (
     <section className="max-lg:py-4 max-lg:px-2 lg:py-16 bg-light-gray max-md:mx-2 max-md:rounded-3xl">
       <div className="container">
@@ -32,16 +35,13 @@ export default function ProcessYourWorkflow() {
               variant="purple"
               className="mb-4 leading-[142.857%] lg:leading-[140.625%]"
             >
-              Your Workflow Doesn&apos;t Disappear
+              {t('title')}
             </Title>
             <Description className="mb-8 leading-[1.529]" size="17">
-              Outsourcing doesn&apos;t mean rebuilding customer operations
-              around someone else&apos;s system. Cinpc works within the
-              processes and requirements defined for the functions you move
-              outside.
+              {t('description')}
             </Description>
 
-            <Button render={<Link href="/services" />}>Explore Services</Button>
+            <Button render={<Link href="/services" />}>{t('button')}</Button>
           </div>
         </div>
       </div>
